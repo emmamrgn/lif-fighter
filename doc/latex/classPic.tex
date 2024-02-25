@@ -1,0 +1,161 @@
+\hypertarget{classPic}{}\doxysection{Référence de la classe Pic}
+\label{classPic}\index{Pic@{Pic}}
+
+
+Classe qui gère l\textquotesingle{}affichage et la manipulation d\textquotesingle{}images.  
+
+
+
+
+{\ttfamily \#include $<$Image.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPic_a988d7a1fcde7fe9e562a218daf3b7539}{Pic}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPic_a312dbed643d2f4b9578a0c6980e74a0f}{$\sim$\+Pic}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPic_ab69623d4135d4e6ef39a1963ad740c5e}{load\+From\+File}} (const char $\ast$filename, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Charge une image depuis un fichier et la transforme en texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPic_a47a6008815b37bdae22141e010461eca}{load\+Current\+Surface}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Charge la surface courante en tant que texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPic_ae2bb91cb3c6f180719e063efd57f7656}{draw}} (SDL\+\_\+\+Renderer $\ast$renderer, int x, int y, int w=-\/1, int h=-\/1)
+\begin{DoxyCompactList}\small\item\em Dessine la texture sur le SDL\+\_\+\+Renderer aux coordonnées (x,y) avec une largeur et une hauteur optionnelles. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classPic_a798ca7c76adef92a84f8c5f7f0e3769a}{get\+Texture}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la texture. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classPic_a69592b403441d075b4c0b5be10c00a45}{get\+Surface}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la surface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPic_a0d38c6c7d57fb8928f659f33c09a120b}{set\+Surface}} (SDL\+\_\+\+Surface $\ast$surf)
+\begin{DoxyCompactList}\small\item\em Modifie la surface de l\textquotesingle{}image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe qui gère l\textquotesingle{}affichage et la manipulation d\textquotesingle{}images. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classPic_a988d7a1fcde7fe9e562a218daf3b7539}\label{classPic_a988d7a1fcde7fe9e562a218daf3b7539}} 
+\index{Pic@{Pic}!Pic@{Pic}}
+\index{Pic@{Pic}!Pic@{Pic}}
+\doxysubsubsection{\texorpdfstring{Pic()}{Pic()}}
+{\footnotesize\ttfamily Pic\+::\+Pic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par défaut. 
+
+\mbox{\Hypertarget{classPic_a312dbed643d2f4b9578a0c6980e74a0f}\label{classPic_a312dbed643d2f4b9578a0c6980e74a0f}} 
+\index{Pic@{Pic}!````~Pic@{$\sim$Pic}}
+\index{````~Pic@{$\sim$Pic}!Pic@{Pic}}
+\doxysubsubsection{\texorpdfstring{$\sim$Pic()}{~Pic()}}
+{\footnotesize\ttfamily Pic\+::$\sim$\+Pic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classPic_ae2bb91cb3c6f180719e063efd57f7656}\label{classPic_ae2bb91cb3c6f180719e063efd57f7656}} 
+\index{Pic@{Pic}!draw@{draw}}
+\index{draw@{draw}!Pic@{Pic}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Pic\+::draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w = {\ttfamily -\/1},  }\item[{int}]{h = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Dessine la texture sur le SDL\+\_\+\+Renderer aux coordonnées (x,y) avec une largeur et une hauteur optionnelles. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em renderer} & Le SDL\+\_\+\+Renderer sur lequel la texture sera dessinée \\
+\hline
+{\em x} & Coordonnée x de la texture \\
+\hline
+{\em y} & Coordonnée y de la texture \\
+\hline
+{\em w} & Largeur de la texture (optionnelle, la taille réelle de l\textquotesingle{}image sera utilisée si non fournie) \\
+\hline
+{\em h} & Hauteur de la texture (optionnelle, la taille réelle de l\textquotesingle{}image sera utilisée si non fournie) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPic_a69592b403441d075b4c0b5be10c00a45}\label{classPic_a69592b403441d075b4c0b5be10c00a45}} 
+\index{Pic@{Pic}!getSurface@{getSurface}}
+\index{getSurface@{getSurface}!Pic@{Pic}}
+\doxysubsubsection{\texorpdfstring{getSurface()}{getSurface()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface$\ast$ Pic\+::get\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la surface. 
+
+\begin{DoxyReturn}{Renvoie}
+SDL\+\_\+\+Surface$\ast$ La surface de l\textquotesingle{}image 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPic_a798ca7c76adef92a84f8c5f7f0e3769a}\label{classPic_a798ca7c76adef92a84f8c5f7f0e3769a}} 
+\index{Pic@{Pic}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!Pic@{Pic}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture $\ast$ Pic\+::get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la texture. 
+
+\begin{DoxyReturn}{Renvoie}
+SDL\+\_\+\+Texture$\ast$ La texture de l\textquotesingle{}image 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPic_a47a6008815b37bdae22141e010461eca}\label{classPic_a47a6008815b37bdae22141e010461eca}} 
+\index{Pic@{Pic}!loadCurrentSurface@{loadCurrentSurface}}
+\index{loadCurrentSurface@{loadCurrentSurface}!Pic@{Pic}}
+\doxysubsubsection{\texorpdfstring{loadCurrentSurface()}{loadCurrentSurface()}}
+{\footnotesize\ttfamily void Pic\+::load\+Current\+Surface (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Charge la surface courante en tant que texture. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em renderer} & Le SDL\+\_\+\+Renderer sur lequel la texture sera dessinée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPic_ab69623d4135d4e6ef39a1963ad740c5e}\label{classPic_ab69623d4135d4e6ef39a1963ad740c5e}} 
+\index{Pic@{Pic}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!Pic@{Pic}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily void Pic\+::load\+From\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Charge une image depuis un fichier et la transforme en texture. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em filename} & Le nom du fichier de l\textquotesingle{}image à charger \\
+\hline
+{\em renderer} & Le SDL\+\_\+\+Renderer sur lequel la texture sera dessinée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPic_a0d38c6c7d57fb8928f659f33c09a120b}\label{classPic_a0d38c6c7d57fb8928f659f33c09a120b}} 
+\index{Pic@{Pic}!setSurface@{setSurface}}
+\index{setSurface@{setSurface}!Pic@{Pic}}
+\doxysubsubsection{\texorpdfstring{setSurface()}{setSurface()}}
+{\footnotesize\ttfamily void Pic\+::set\+Surface (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Surface $\ast$}]{surf }\end{DoxyParamCaption})}
+
+
+
+Modifie la surface de l\textquotesingle{}image. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em surf} & La nouvelle surface de l\textquotesingle{}image \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/\+SDL/\mbox{\hyperlink{Image_8h}{Image.\+h}}\item 
+src/\+SDL/\mbox{\hyperlink{Image_8cpp}{Image.\+cpp}}\end{DoxyCompactItemize}

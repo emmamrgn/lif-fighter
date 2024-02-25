@@ -1,0 +1,79 @@
+\hypertarget{classResourceManager}{}\doxysection{Référence de la classe Resource\+Manager}
+\label{classResourceManager}\index{ResourceManager@{ResourceManager}}
+
+
+La classe \mbox{\hyperlink{classResourceManager}{Resource\+Manager}} est une classe Singleton qui gère les ressources SDL.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResourceManager_a671c186e4630599e7e36d000c53eaf80}{$\sim$\+Resource\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Détruit l\textquotesingle{}objet \mbox{\hyperlink{classResourceManager}{Resource\+Manager}}. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classResourceManager_a31d758ae7d5a972154ccc7dae2144166}{Get\+Surface}} (std\+::string filepath)
+\begin{DoxyCompactList}\small\item\em Obtient surface correspondant à un fichier image spécifié \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classResourceManager}{Resource\+Manager}} \& \mbox{\hyperlink{classResourceManager_a98b11a6302bf0db4ffc81eea70512ee2}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Obtient l\textquotesingle{}instance unique de \mbox{\hyperlink{classResourceManager}{Resource\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+La classe \mbox{\hyperlink{classResourceManager}{Resource\+Manager}} est une classe Singleton qui gère les ressources SDL. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classResourceManager_a671c186e4630599e7e36d000c53eaf80}\label{classResourceManager_a671c186e4630599e7e36d000c53eaf80}} 
+\index{ResourceManager@{ResourceManager}!````~ResourceManager@{$\sim$ResourceManager}}
+\index{````~ResourceManager@{$\sim$ResourceManager}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ResourceManager()}{~ResourceManager()}}
+{\footnotesize\ttfamily Resource\+Manager\+::$\sim$\+Resource\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Détruit l\textquotesingle{}objet \mbox{\hyperlink{classResourceManager}{Resource\+Manager}}. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classResourceManager_a98b11a6302bf0db4ffc81eea70512ee2}\label{classResourceManager_a98b11a6302bf0db4ffc81eea70512ee2}} 
+\index{ResourceManager@{ResourceManager}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classResourceManager}{Resource\+Manager}} \& Resource\+Manager\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtient l\textquotesingle{}instance unique de \mbox{\hyperlink{classResourceManager}{Resource\+Manager}}. 
+
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}instance unique 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResourceManager_a31d758ae7d5a972154ccc7dae2144166}\label{classResourceManager_a31d758ae7d5a972154ccc7dae2144166}} 
+\index{ResourceManager@{ResourceManager}!GetSurface@{GetSurface}}
+\index{GetSurface@{GetSurface}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetSurface()}{GetSurface()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Resource\+Manager\+::\+Get\+Surface (\begin{DoxyParamCaption}\item[{std\+::string}]{filepath }\end{DoxyParamCaption})}
+
+
+
+Obtient surface correspondant à un fichier image spécifié 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em filepath} & = chemin du fichier image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+pointeur vers surface SDL correspondant au fichier spécifié ou nullptr si n\textquotesingle{}a pas été trouvé 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/\+SDL/\mbox{\hyperlink{ResourceManager_8h}{Resource\+Manager.\+h}}\item 
+src/\+SDL/\mbox{\hyperlink{ResourceManager_8cpp}{Resource\+Manager.\+cpp}}\end{DoxyCompactItemize}

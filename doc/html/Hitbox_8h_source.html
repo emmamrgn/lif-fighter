@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LIF_FIGHTERS by Sasha&amp;Emma:  Fichier source de src/core/Hitbox.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LIF_FIGHTERS by Sasha&amp;Emma
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Hitbox.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Hitbox_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;string.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classHitbox.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classHitbox.html">Hitbox</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classHitbox.html#a007cbb0b9511e6466452d6bdc00a4a7f">   21</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHitbox.html#a007cbb0b9511e6466452d6bdc00a4a7f">Boxwidth_hitbox</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classHitbox.html#ad802b82a8d83bdf33765e64d9f034531">   22</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHitbox.html#ad802b82a8d83bdf33765e64d9f034531">Boxheight_hitbox</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classHitbox.html#a999b0be8486978b3dd7bcd001c7c3c03">Hitbox</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classHitbox.html#aafd01dbe871f6f7f464217345bd4ca01">~Hitbox</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHitbox.html#a70d44f40f89402977669f8859d9c8936">hitbox</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHitbox.html#a472bd22b1a98b3a880d8e90e69d660e5">setPositionX</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHitbox.html#a6d013be5a8c55d5be99c56f1b8ea7f3c">setPositionY</a>(<span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHitbox.html#a086ca204e750783c46d9a82239204908">getPosition</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHitbox.html#adc5018bc896f39597b28fca2caf00c24">getPositionX</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHitbox.html#a7686c0a7d0f8b96e3a2426a196b1b8bd">getPositionY</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHitbox.html#ac3d7761a83ec64a09de8a5ec279ca511">setSize</a>(<span class="keywordtype">int</span> Boxwidth, <span class="keywordtype">int</span> Boxheight);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHitbox.html#a68a50c8749ff6654ca28ef37b0fbfcce">setSizeW</a>(<span class="keywordtype">int</span> Boxwidth);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHitbox.html#a97664a92b8cc2130b8d9b00784d76376">getSizeW</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHitbox.html#a92328ead399996160305197298a5cd6f">getSizeH</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHitbox.html#a9ffe8e15d4c6ac7dc83c4a8765707d3c">setSizeH</a>(<span class="keywordtype">int</span> Boxheight);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHitbox.html#ae8744b92cbf9c40def81a12f6b196bfa">RegresstionTest</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">int</span> Hitbox_x, Hitbox_y;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="ttc" id="aclassHitbox_html"><div class="ttname"><a href="classHitbox.html">Hitbox</a></div><div class="ttdoc">La classe Hitbox est définie par sa position (x,y), et sa taille (width, height)</div><div class="ttdef"><b>Definition:</b> Hitbox.h:19</div></div>
+<div class="ttc" id="aclassHitbox_html_a007cbb0b9511e6466452d6bdc00a4a7f"><div class="ttname"><a href="classHitbox.html#a007cbb0b9511e6466452d6bdc00a4a7f">Hitbox::Boxwidth_hitbox</a></div><div class="ttdeci">int Boxwidth_hitbox</div><div class="ttdef"><b>Definition:</b> Hitbox.h:21</div></div>
+<div class="ttc" id="aclassHitbox_html_a086ca204e750783c46d9a82239204908"><div class="ttname"><a href="classHitbox.html#a086ca204e750783c46d9a82239204908">Hitbox::getPosition</a></div><div class="ttdeci">int getPosition()</div><div class="ttdoc">Renvoie la position de la Hitbox en x et en y.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:31</div></div>
+<div class="ttc" id="aclassHitbox_html_a472bd22b1a98b3a880d8e90e69d660e5"><div class="ttname"><a href="classHitbox.html#a472bd22b1a98b3a880d8e90e69d660e5">Hitbox::setPositionX</a></div><div class="ttdeci">void setPositionX(int x)</div><div class="ttdoc">Définit la position de la Hitbox en x.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:21</div></div>
+<div class="ttc" id="aclassHitbox_html_a68a50c8749ff6654ca28ef37b0fbfcce"><div class="ttname"><a href="classHitbox.html#a68a50c8749ff6654ca28ef37b0fbfcce">Hitbox::setSizeW</a></div><div class="ttdeci">void setSizeW(int Boxwidth)</div><div class="ttdoc">Définit la largeur de la Hitbox.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:65</div></div>
+<div class="ttc" id="aclassHitbox_html_a6d013be5a8c55d5be99c56f1b8ea7f3c"><div class="ttname"><a href="classHitbox.html#a6d013be5a8c55d5be99c56f1b8ea7f3c">Hitbox::setPositionY</a></div><div class="ttdeci">void setPositionY(int y)</div><div class="ttdoc">Définit la position de la Hitbox en y.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:26</div></div>
+<div class="ttc" id="aclassHitbox_html_a70d44f40f89402977669f8859d9c8936"><div class="ttname"><a href="classHitbox.html#a70d44f40f89402977669f8859d9c8936">Hitbox::hitbox</a></div><div class="ttdeci">void hitbox(int x, int y)</div><div class="ttdoc">Définit la position de la Hitbox en x et y.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:15</div></div>
+<div class="ttc" id="aclassHitbox_html_a7686c0a7d0f8b96e3a2426a196b1b8bd"><div class="ttname"><a href="classHitbox.html#a7686c0a7d0f8b96e3a2426a196b1b8bd">Hitbox::getPositionY</a></div><div class="ttdeci">int getPositionY()</div><div class="ttdoc">Renvoie la position de la Hitbox en y.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:42</div></div>
+<div class="ttc" id="aclassHitbox_html_a92328ead399996160305197298a5cd6f"><div class="ttname"><a href="classHitbox.html#a92328ead399996160305197298a5cd6f">Hitbox::getSizeH</a></div><div class="ttdeci">int getSizeH()</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:59</div></div>
+<div class="ttc" id="aclassHitbox_html_a97664a92b8cc2130b8d9b00784d76376"><div class="ttname"><a href="classHitbox.html#a97664a92b8cc2130b8d9b00784d76376">Hitbox::getSizeW</a></div><div class="ttdeci">int getSizeW()</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:53</div></div>
+<div class="ttc" id="aclassHitbox_html_a999b0be8486978b3dd7bcd001c7c3c03"><div class="ttname"><a href="classHitbox.html#a999b0be8486978b3dd7bcd001c7c3c03">Hitbox::Hitbox</a></div><div class="ttdeci">Hitbox()</div><div class="ttdoc">Construit une Hitbox.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:9</div></div>
+<div class="ttc" id="aclassHitbox_html_a9ffe8e15d4c6ac7dc83c4a8765707d3c"><div class="ttname"><a href="classHitbox.html#a9ffe8e15d4c6ac7dc83c4a8765707d3c">Hitbox::setSizeH</a></div><div class="ttdeci">void setSizeH(int Boxheight)</div><div class="ttdoc">Définit la hauteur de la Hitbox.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:70</div></div>
+<div class="ttc" id="aclassHitbox_html_aafd01dbe871f6f7f464217345bd4ca01"><div class="ttname"><a href="classHitbox.html#aafd01dbe871f6f7f464217345bd4ca01">Hitbox::~Hitbox</a></div><div class="ttdeci">~Hitbox()</div><div class="ttdoc">Détruit la Hitbox.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:13</div></div>
+<div class="ttc" id="aclassHitbox_html_ac3d7761a83ec64a09de8a5ec279ca511"><div class="ttname"><a href="classHitbox.html#ac3d7761a83ec64a09de8a5ec279ca511">Hitbox::setSize</a></div><div class="ttdeci">void setSize(int Boxwidth, int Boxheight)</div><div class="ttdoc">Définit la taille de la Hitbox.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:47</div></div>
+<div class="ttc" id="aclassHitbox_html_ad802b82a8d83bdf33765e64d9f034531"><div class="ttname"><a href="classHitbox.html#ad802b82a8d83bdf33765e64d9f034531">Hitbox::Boxheight_hitbox</a></div><div class="ttdeci">int Boxheight_hitbox</div><div class="ttdef"><b>Definition:</b> Hitbox.h:22</div></div>
+<div class="ttc" id="aclassHitbox_html_adc5018bc896f39597b28fca2caf00c24"><div class="ttname"><a href="classHitbox.html#adc5018bc896f39597b28fca2caf00c24">Hitbox::getPositionX</a></div><div class="ttdeci">int getPositionX()</div><div class="ttdoc">Renvoie la position de la Hitbox en x.</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:37</div></div>
+<div class="ttc" id="aclassHitbox_html_ae8744b92cbf9c40def81a12f6b196bfa"><div class="ttname"><a href="classHitbox.html#ae8744b92cbf9c40def81a12f6b196bfa">Hitbox::RegresstionTest</a></div><div class="ttdeci">void RegresstionTest()</div><div class="ttdef"><b>Definition:</b> Hitbox.cpp:75</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,149 @@
+\hypertarget{classAnimation}{}\doxysection{Référence de la classe Animation}
+\label{classAnimation}\index{Animation@{Animation}}
+
+
+Cette classe gère l\textquotesingle{}animation d\textquotesingle{}un personnage en sélectionnant et en affichant des images de texture.  
+
+
+
+
+{\ttfamily \#include $<$Animation.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAnimation_a83f0a16cef7117f187ad596de38dd9d6}{Animation}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut de la classe \mbox{\hyperlink{classAnimation}{Animation}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAnimation_afb30522ddfadf3d6e4c7e98d4a15a4a6}{Animation}} (SDL\+\_\+\+Renderer $\ast$\&renderer, string filepath)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classAnimation}{Animation}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAnimation_a401b68793d4fbf48d481c030ee4b2a16}{$\sim$\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \mbox{\hyperlink{classAnimation}{Animation}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimation_a2ad6789ae5f1468a57ac8561308ef15b}{Draw}} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Affiche l\textquotesingle{}image courante de l\textquotesingle{}animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimation_af91115f546f07b19ccfbb96e4eb976a6}{Play\+Frame}} (int x, int y, int w, int h, int frame)
+\begin{DoxyCompactList}\small\item\em Sélectionne et affiche une image spécifique de la texture de l\textquotesingle{}animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimation_a0c6a4e940db84d4a6246fcb3ae773402}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Met à jour l\textquotesingle{}animation à chaque frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimation_a01de02b13d04e1b564af6ac0e05fb38c}{Render}} (SDL\+\_\+\+Renderer $\ast$\&renderer)
+\begin{DoxyCompactList}\small\item\em Affiche l\textquotesingle{}animation complète. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Cette classe gère l\textquotesingle{}animation d\textquotesingle{}un personnage en sélectionnant et en affichant des images de texture. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classAnimation_a83f0a16cef7117f187ad596de38dd9d6}\label{classAnimation_a83f0a16cef7117f187ad596de38dd9d6}} 
+\index{Animation@{Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Animation@{Animation}}
+\doxysubsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Animation\+::\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par défaut de la classe \mbox{\hyperlink{classAnimation}{Animation}}. 
+
+\mbox{\Hypertarget{classAnimation_afb30522ddfadf3d6e4c7e98d4a15a4a6}\label{classAnimation_afb30522ddfadf3d6e4c7e98d4a15a4a6}} 
+\index{Animation@{Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Animation@{Animation}}
+\doxysubsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$\&}]{renderer,  }\item[{string}]{filepath }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classAnimation}{Animation}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em renderer} & Renderer SDL pour afficher les images. \\
+\hline
+{\em filepath} & Chemin du fichier contenant la texture de l\textquotesingle{}animation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAnimation_a401b68793d4fbf48d481c030ee4b2a16}\label{classAnimation_a401b68793d4fbf48d481c030ee4b2a16}} 
+\index{Animation@{Animation}!````~Animation@{$\sim$Animation}}
+\index{````~Animation@{$\sim$Animation}!Animation@{Animation}}
+\doxysubsubsection{\texorpdfstring{$\sim$Animation()}{~Animation()}}
+{\footnotesize\ttfamily Animation\+::$\sim$\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la classe \mbox{\hyperlink{classAnimation}{Animation}}. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classAnimation_a2ad6789ae5f1468a57ac8561308ef15b}\label{classAnimation_a2ad6789ae5f1468a57ac8561308ef15b}} 
+\index{Animation@{Animation}!Draw@{Draw}}
+\index{Draw@{Draw}!Animation@{Animation}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Animation\+::\+Draw (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Affiche l\textquotesingle{}image courante de l\textquotesingle{}animation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & Abscisse de l\textquotesingle{}image à afficher. \\
+\hline
+{\em y} & Ordonnée de l\textquotesingle{}image à afficher. \\
+\hline
+{\em w} & Largeur de l\textquotesingle{}image à afficher. \\
+\hline
+{\em h} & Hauteur de l\textquotesingle{}image à afficher. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAnimation_af91115f546f07b19ccfbb96e4eb976a6}\label{classAnimation_af91115f546f07b19ccfbb96e4eb976a6}} 
+\index{Animation@{Animation}!PlayFrame@{PlayFrame}}
+\index{PlayFrame@{PlayFrame}!Animation@{Animation}}
+\doxysubsubsection{\texorpdfstring{PlayFrame()}{PlayFrame()}}
+{\footnotesize\ttfamily void Animation\+::\+Play\+Frame (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{frame }\end{DoxyParamCaption})}
+
+
+
+Sélectionne et affiche une image spécifique de la texture de l\textquotesingle{}animation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & Abscisse de l\textquotesingle{}image à afficher. \\
+\hline
+{\em y} & Ordonnée de l\textquotesingle{}image à afficher. \\
+\hline
+{\em w} & Largeur de l\textquotesingle{}image à afficher. \\
+\hline
+{\em h} & Hauteur de l\textquotesingle{}image à afficher. \\
+\hline
+{\em frame} & Numéro de l\textquotesingle{}image à afficher dans la texture de l\textquotesingle{}animation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAnimation_a01de02b13d04e1b564af6ac0e05fb38c}\label{classAnimation_a01de02b13d04e1b564af6ac0e05fb38c}} 
+\index{Animation@{Animation}!Render@{Render}}
+\index{Render@{Render}!Animation@{Animation}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Animation\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$\&}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Affiche l\textquotesingle{}animation complète. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em renderer} & Renderer SDL pour afficher les images. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAnimation_a0c6a4e940db84d4a6246fcb3ae773402}\label{classAnimation_a0c6a4e940db84d4a6246fcb3ae773402}} 
+\index{Animation@{Animation}!Update@{Update}}
+\index{Update@{Update}!Animation@{Animation}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Animation\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met à jour l\textquotesingle{}animation à chaque frame. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/\+SDL/\mbox{\hyperlink{Animation_8h}{Animation.\+h}}\item 
+src/\+SDL/\mbox{\hyperlink{Animation_8cpp}{Animation.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LIF_FIGHTERS by Sasha&amp;Emma:  Fichier source de src/SDL/sdlSF.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LIF_FIGHTERS by Sasha&amp;Emma
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e3d0bbeedf28d39de944359c0c61b1dd.html">SDL</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">sdlSF.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sdlSF_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../core/Game.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL_image.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL_ttf.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL_mixer.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Animation_8h.html">Animation.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="AnimationData_8h.html">AnimationData.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Menu_8h.html">Menu.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Image_8h.html">Image.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;../core/CharacterState.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classSDLSimple.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSDLSimple.html">SDLSimple</a> </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classGame.html">Game</a> game;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        SDL_Window * window; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        SDL_Renderer *renderer; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        TTF_Font * font; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classPic.html">Pic</a> font_im; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        SDL_Color font_color; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classPic.html">Pic</a> background; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classPic.html">Pic</a> im_iconRise; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classPic.html">Pic</a> im_iconYukiko; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classPic.html">Pic</a> im_EndingRise; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classPic.html">Pic</a> im_NameRise; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classPic.html">Pic</a> im_EndingYukiko; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classPic.html">Pic</a> im_NameYukiko; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classPic.html">Pic</a> im_RiseWin;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">bool</span> keyboard; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">bool</span> withSound; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        Mix_Music * soundmp3; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        Mix_Chunk* soundwav; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classFighter.html">Fighter</a>&amp; player = game.<a class="code" href="classGame.html#af35d231beac75d8fe5a51d3224f27f75">getPlayer1</a>(); </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classFighter.html">Fighter</a>&amp; player2 = game.<a class="code" href="classGame.html#ad5bb681100ccccee6b36f143209488dc">getPlayer2</a>(); </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// SDL_Renderer *menuRenderer;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classMenu.html">Menu</a> mainMenu;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">// enum GameState {MENU,PLAY,INFOS,QUIT};</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// GameState State = GameState::MENU;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classSDLSimple.html#ab1891ec34a6dad8be4651bf58c9c1124">   72</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSDLSimple.html#ab1891ec34a6dad8be4651bf58c9c1124">frameNumber</a>; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classSDLSimple.html#ae3bb201b2604f52aed651ffb8ca1e71e">   73</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classSDLSimple.html#ae3bb201b2604f52aed651ffb8ca1e71e">frameNumber2</a>; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classSDLSimple.html#af9779795b4341302845bf29407c40225">   75</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSDLSimple.html#af9779795b4341302845bf29407c40225">AnimationWidth</a> = <a class="code" href="classSDLSimple.html#a46f486308989e69dea1d590c92fa3f76">tabRise</a>[player.<a class="code" href="classFighter.html#adc6af07e997ddc575b1132ee2af92cdb">PlayerState</a>.<a class="code" href="classCharacterState.html#a437f66b232c9e1faf155f63b1fae3f69">state</a>].<a class="code" href="classAnimationData.html#a7124d50a97e74ce0477e64fb90d7af30">AnimationWidth</a>; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classSDLSimple.html#aa0adcdeee55ca98d006c1d5951619b5f">   76</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSDLSimple.html#aa0adcdeee55ca98d006c1d5951619b5f">AnimationHeight</a> = <a class="code" href="classSDLSimple.html#a46f486308989e69dea1d590c92fa3f76">tabRise</a>[player.<a class="code" href="classFighter.html#adc6af07e997ddc575b1132ee2af92cdb">PlayerState</a>.<a class="code" href="classCharacterState.html#a437f66b232c9e1faf155f63b1fae3f69">state</a>].<a class="code" href="classAnimationData.html#a3acb7149ccc01bab20ba12c1776ed41d">AnimationHeight</a>; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classSDLSimple.html#a44fe3ef11d8e3675aa0c1e0aa38809e7">   77</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSDLSimple.html#a44fe3ef11d8e3675aa0c1e0aa38809e7">NbFrames</a> = <a class="code" href="classSDLSimple.html#a46f486308989e69dea1d590c92fa3f76">tabRise</a>[player.<a class="code" href="classFighter.html#adc6af07e997ddc575b1132ee2af92cdb">PlayerState</a>.<a class="code" href="classCharacterState.html#a437f66b232c9e1faf155f63b1fae3f69">state</a>].<a class="code" href="classAnimationData.html#a3295a2b08b655214b0a90617ab0eaf5e">NbFrames</a>; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classSDLSimple.html#ae7b975531d09a7b25c8c20fb71baf1d9">   79</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSDLSimple.html#ae7b975531d09a7b25c8c20fb71baf1d9">AnimationWidth2</a> = <a class="code" href="classSDLSimple.html#a5f7d17f144e56919fae97f9e15eb294b">tabYukiko</a>[player2.<a class="code" href="classFighter.html#adc6af07e997ddc575b1132ee2af92cdb">PlayerState</a>.<a class="code" href="classCharacterState.html#a437f66b232c9e1faf155f63b1fae3f69">state</a>].<a class="code" href="classAnimationData.html#a7124d50a97e74ce0477e64fb90d7af30">AnimationWidth</a>; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classSDLSimple.html#a1a878879178d837e07192086958ef8ae">   80</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSDLSimple.html#a1a878879178d837e07192086958ef8ae">AnimationHeight2</a> = <a class="code" href="classSDLSimple.html#a5f7d17f144e56919fae97f9e15eb294b">tabYukiko</a>[player2.<a class="code" href="classFighter.html#adc6af07e997ddc575b1132ee2af92cdb">PlayerState</a>.<a class="code" href="classCharacterState.html#a437f66b232c9e1faf155f63b1fae3f69">state</a>].<a class="code" href="classAnimationData.html#a3acb7149ccc01bab20ba12c1776ed41d">AnimationHeight</a>; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classSDLSimple.html#a8094896e9de6c9bda124d183afcaf54c">   81</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSDLSimple.html#a8094896e9de6c9bda124d183afcaf54c">NbFrames2</a> = <a class="code" href="classSDLSimple.html#a5f7d17f144e56919fae97f9e15eb294b">tabYukiko</a>[player2.<a class="code" href="classFighter.html#adc6af07e997ddc575b1132ee2af92cdb">PlayerState</a>.<a class="code" href="classCharacterState.html#a437f66b232c9e1faf155f63b1fae3f69">state</a>].<a class="code" href="classAnimationData.html#a3295a2b08b655214b0a90617ab0eaf5e">NbFrames</a>; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classSDLSimple.html#a86fc32beeb1b399f17e31e3676435d15">SDLSimple</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="classSDLSimple.html#a41bcf4dde568370d4326844190f433ea">~SDLSimple</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSDLSimple.html#a6046472261ef8668845843489a66194e">sdlBoucle</a> ();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSDLSimple.html#ae4445d8a311904c96f02eb91705e66ff">sdlAff</a> ();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classSDLSimple.html#a2629d26e0adb340c09e22b6dcf21eb46">  105</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSDLSimple.html#a2629d26e0adb340c09e22b6dcf21eb46">createMenu</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSDLSimple.html#a079f3713595bb0f9b57b40de0df3b167">playMoveSound</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* soundFile);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSDLSimple.html#ab4f06b3d6a4878e1438a0cf21ec28bf2">hp_bar</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSDLSimple.html#a98d064552737cc3cd696db059238eaa7">hitboxes</a>();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSDLSimple.html#aa636bb29984cdf7507038d998eda44e9">endgame</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classSDLSimple.html#a46f486308989e69dea1d590c92fa3f76">  132</a></span>&#160;        <a class="code" href="classAnimationData.html">AnimationData</a> <a class="code" href="classSDLSimple.html#a46f486308989e69dea1d590c92fa3f76">tabRise</a>[11];</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classSDLSimple.html#a5f7d17f144e56919fae97f9e15eb294b">  137</a></span>&#160;        <a class="code" href="classAnimationData.html">AnimationData</a> <a class="code" href="classSDLSimple.html#a5f7d17f144e56919fae97f9e15eb294b">tabYukiko</a>[11];</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;};</div>
+<div class="ttc" id="aAnimationData_8h_html"><div class="ttname"><a href="AnimationData_8h.html">AnimationData.h</a></div><div class="ttdoc">Module qui gère les informations des animations (AnimationData)</div></div>
+<div class="ttc" id="aAnimation_8h_html"><div class="ttname"><a href="Animation_8h.html">Animation.h</a></div><div class="ttdoc">Module qui gère l'Animation du personnage.</div></div>
+<div class="ttc" id="aImage_8h_html"><div class="ttname"><a href="Image_8h.html">Image.h</a></div><div class="ttdoc">Module qui gère l'affichage et la manipulation d'images (Pic)</div></div>
+<div class="ttc" id="aMenu_8h_html"><div class="ttname"><a href="Menu_8h.html">Menu.h</a></div><div class="ttdoc">Module qui gère le Menu et son affichage.</div></div>
+<div class="ttc" id="aclassAnimationData_html"><div class="ttname"><a href="classAnimationData.html">AnimationData</a></div><div class="ttdoc">La classe AnimationData gère les informations des animations.</div><div class="ttdef"><b>Definition:</b> AnimationData.h:21</div></div>
+<div class="ttc" id="aclassAnimationData_html_a3295a2b08b655214b0a90617ab0eaf5e"><div class="ttname"><a href="classAnimationData.html#a3295a2b08b655214b0a90617ab0eaf5e">AnimationData::NbFrames</a></div><div class="ttdeci">int NbFrames</div><div class="ttdef"><b>Definition:</b> AnimationData.h:44</div></div>
+<div class="ttc" id="aclassAnimationData_html_a3acb7149ccc01bab20ba12c1776ed41d"><div class="ttname"><a href="classAnimationData.html#a3acb7149ccc01bab20ba12c1776ed41d">AnimationData::AnimationHeight</a></div><div class="ttdeci">int AnimationHeight</div><div class="ttdef"><b>Definition:</b> AnimationData.h:48</div></div>
+<div class="ttc" id="aclassAnimationData_html_a7124d50a97e74ce0477e64fb90d7af30"><div class="ttname"><a href="classAnimationData.html#a7124d50a97e74ce0477e64fb90d7af30">AnimationData::AnimationWidth</a></div><div class="ttdeci">int AnimationWidth</div><div class="ttdef"><b>Definition:</b> AnimationData.h:46</div></div>
+<div class="ttc" id="aclassCharacterState_html_a437f66b232c9e1faf155f63b1fae3f69"><div class="ttname"><a href="classCharacterState.html#a437f66b232c9e1faf155f63b1fae3f69">CharacterState::state</a></div><div class="ttdeci">States state</div><div class="ttdef"><b>Definition:</b> CharacterState.h:26</div></div>
+<div class="ttc" id="aclassFighter_html"><div class="ttname"><a href="classFighter.html">Fighter</a></div><div class="ttdoc">La classe Fighter est définie par sa position 2D (x,y), son nombre de point de vie et ses 2 Hitbox.</div><div class="ttdef"><b>Definition:</b> Fighter.h:23</div></div>
+<div class="ttc" id="aclassFighter_html_adc6af07e997ddc575b1132ee2af92cdb"><div class="ttname"><a href="classFighter.html#adc6af07e997ddc575b1132ee2af92cdb">Fighter::PlayerState</a></div><div class="ttdeci">CharacterState PlayerState</div><div class="ttdef"><b>Definition:</b> Fighter.h:25</div></div>
+<div class="ttc" id="aclassGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdoc">La classe Game est définie par 2 Fighter, un Field.</div><div class="ttdef"><b>Definition:</b> Game.h:20</div></div>
+<div class="ttc" id="aclassGame_html_ad5bb681100ccccee6b36f143209488dc"><div class="ttname"><a href="classGame.html#ad5bb681100ccccee6b36f143209488dc">Game::getPlayer2</a></div><div class="ttdeci">Fighter &amp; getPlayer2()</div><div class="ttdoc">Renvoie le fighter Player2.</div><div class="ttdef"><b>Definition:</b> Game.cpp:28</div></div>
+<div class="ttc" id="aclassGame_html_af35d231beac75d8fe5a51d3224f27f75"><div class="ttname"><a href="classGame.html#af35d231beac75d8fe5a51d3224f27f75">Game::getPlayer1</a></div><div class="ttdeci">Fighter &amp; getPlayer1()</div><div class="ttdoc">Renvoie le fighter Player1.</div><div class="ttdef"><b>Definition:</b> Game.cpp:23</div></div>
+<div class="ttc" id="aclassMenu_html"><div class="ttname"><a href="classMenu.html">Menu</a></div><div class="ttdef"><b>Definition:</b> Menu.h:22</div></div>
+<div class="ttc" id="aclassPic_html"><div class="ttname"><a href="classPic.html">Pic</a></div><div class="ttdoc">Classe qui gère l'affichage et la manipulation d'images.</div><div class="ttdef"><b>Definition:</b> Image.h:25</div></div>
+<div class="ttc" id="aclassSDLSimple_html"><div class="ttname"><a href="classSDLSimple.html">SDLSimple</a></div><div class="ttdoc">La classe SDL pour gérer le jeu avec un affichage SDL.</div><div class="ttdef"><b>Definition:</b> sdlSF.h:31</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a079f3713595bb0f9b57b40de0df3b167"><div class="ttname"><a href="classSDLSimple.html#a079f3713595bb0f9b57b40de0df3b167">SDLSimple::playMoveSound</a></div><div class="ttdeci">void playMoveSound(const char *soundFile)</div><div class="ttdoc">Joue un fichier son.</div><div class="ttdef"><b>Definition:</b> sdlSF.cpp:171</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a1a878879178d837e07192086958ef8ae"><div class="ttname"><a href="classSDLSimple.html#a1a878879178d837e07192086958ef8ae">SDLSimple::AnimationHeight2</a></div><div class="ttdeci">int AnimationHeight2</div><div class="ttdef"><b>Definition:</b> sdlSF.h:80</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a2629d26e0adb340c09e22b6dcf21eb46"><div class="ttname"><a href="classSDLSimple.html#a2629d26e0adb340c09e22b6dcf21eb46">SDLSimple::createMenu</a></div><div class="ttdeci">void createMenu()</div><div class="ttdoc">Crée le menu principal du jeu.</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a41bcf4dde568370d4326844190f433ea"><div class="ttname"><a href="classSDLSimple.html#a41bcf4dde568370d4326844190f433ea">SDLSimple::~SDLSimple</a></div><div class="ttdeci">~SDLSimple()</div><div class="ttdoc">Destructeur de SDLSimple.</div><div class="ttdef"><b>Definition:</b> sdlSF.cpp:135</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a44fe3ef11d8e3675aa0c1e0aa38809e7"><div class="ttname"><a href="classSDLSimple.html#a44fe3ef11d8e3675aa0c1e0aa38809e7">SDLSimple::NbFrames</a></div><div class="ttdeci">int NbFrames</div><div class="ttdef"><b>Definition:</b> sdlSF.h:77</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a46f486308989e69dea1d590c92fa3f76"><div class="ttname"><a href="classSDLSimple.html#a46f486308989e69dea1d590c92fa3f76">SDLSimple::tabRise</a></div><div class="ttdeci">AnimationData tabRise[11]</div><div class="ttdoc">Tableau de données d'animation pour Rise.</div><div class="ttdef"><b>Definition:</b> sdlSF.h:132</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a5f7d17f144e56919fae97f9e15eb294b"><div class="ttname"><a href="classSDLSimple.html#a5f7d17f144e56919fae97f9e15eb294b">SDLSimple::tabYukiko</a></div><div class="ttdeci">AnimationData tabYukiko[11]</div><div class="ttdoc">Tableau de données d'animation pour Yukiko.</div><div class="ttdef"><b>Definition:</b> sdlSF.h:137</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a6046472261ef8668845843489a66194e"><div class="ttname"><a href="classSDLSimple.html#a6046472261ef8668845843489a66194e">SDLSimple::sdlBoucle</a></div><div class="ttdeci">void sdlBoucle()</div><div class="ttdoc">Boucle principale du jeu avec SDL.</div><div class="ttdef"><b>Definition:</b> sdlSF.cpp:267</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a8094896e9de6c9bda124d183afcaf54c"><div class="ttname"><a href="classSDLSimple.html#a8094896e9de6c9bda124d183afcaf54c">SDLSimple::NbFrames2</a></div><div class="ttdeci">int NbFrames2</div><div class="ttdef"><b>Definition:</b> sdlSF.h:81</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a86fc32beeb1b399f17e31e3676435d15"><div class="ttname"><a href="classSDLSimple.html#a86fc32beeb1b399f17e31e3676435d15">SDLSimple::SDLSimple</a></div><div class="ttdeci">SDLSimple()</div><div class="ttdoc">Constructeur de SDLSimple.</div><div class="ttdef"><b>Definition:</b> sdlSF.cpp:11</div></div>
+<div class="ttc" id="aclassSDLSimple_html_a98d064552737cc3cd696db059238eaa7"><div class="ttname"><a href="classSDLSimple.html#a98d064552737cc3cd696db059238eaa7">SDLSimple::hitboxes</a></div><div class="ttdeci">void hitboxes()</div><div class="ttdoc">Met en place les collisions et l'impact sur les poins de vie / affiche si besoin les hitboxes des per...</div><div class="ttdef"><b>Definition:</b> sdlSF.cpp:223</div></div>
+<div class="ttc" id="aclassSDLSimple_html_aa0adcdeee55ca98d006c1d5951619b5f"><div class="ttname"><a href="classSDLSimple.html#aa0adcdeee55ca98d006c1d5951619b5f">SDLSimple::AnimationHeight</a></div><div class="ttdeci">int AnimationHeight</div><div class="ttdef"><b>Definition:</b> sdlSF.h:76</div></div>
+<div class="ttc" id="aclassSDLSimple_html_aa636bb29984cdf7507038d998eda44e9"><div class="ttname"><a href="classSDLSimple.html#aa636bb29984cdf7507038d998eda44e9">SDLSimple::endgame</a></div><div class="ttdeci">void endgame()</div><div class="ttdoc">Met en place la fin de partie.</div><div class="ttdef"><b>Definition:</b> sdlSF.cpp:247</div></div>
+<div class="ttc" id="aclassSDLSimple_html_ab1891ec34a6dad8be4651bf58c9c1124"><div class="ttname"><a href="classSDLSimple.html#ab1891ec34a6dad8be4651bf58c9c1124">SDLSimple::frameNumber</a></div><div class="ttdeci">static int frameNumber</div><div class="ttdef"><b>Definition:</b> sdlSF.h:72</div></div>
+<div class="ttc" id="aclassSDLSimple_html_ab4f06b3d6a4878e1438a0cf21ec28bf2"><div class="ttname"><a href="classSDLSimple.html#ab4f06b3d6a4878e1438a0cf21ec28bf2">SDLSimple::hp_bar</a></div><div class="ttdeci">void hp_bar()</div><div class="ttdoc">Affiche la barre d'hp des fighters à l'écran.</div><div class="ttdef"><b>Definition:</b> sdlSF.cpp:185</div></div>
+<div class="ttc" id="aclassSDLSimple_html_ae3bb201b2604f52aed651ffb8ca1e71e"><div class="ttname"><a href="classSDLSimple.html#ae3bb201b2604f52aed651ffb8ca1e71e">SDLSimple::frameNumber2</a></div><div class="ttdeci">static int frameNumber2</div><div class="ttdef"><b>Definition:</b> sdlSF.h:73</div></div>
+<div class="ttc" id="aclassSDLSimple_html_ae4445d8a311904c96f02eb91705e66ff"><div class="ttname"><a href="classSDLSimple.html#ae4445d8a311904c96f02eb91705e66ff">SDLSimple::sdlAff</a></div><div class="ttdeci">void sdlAff()</div><div class="ttdoc">Affiche les textures à l'écran.</div><div class="ttdef"><b>Definition:</b> sdlSF.cpp:148</div></div>
+<div class="ttc" id="aclassSDLSimple_html_ae7b975531d09a7b25c8c20fb71baf1d9"><div class="ttname"><a href="classSDLSimple.html#ae7b975531d09a7b25c8c20fb71baf1d9">SDLSimple::AnimationWidth2</a></div><div class="ttdeci">int AnimationWidth2</div><div class="ttdef"><b>Definition:</b> sdlSF.h:79</div></div>
+<div class="ttc" id="aclassSDLSimple_html_af9779795b4341302845bf29407c40225"><div class="ttname"><a href="classSDLSimple.html#af9779795b4341302845bf29407c40225">SDLSimple::AnimationWidth</a></div><div class="ttdeci">int AnimationWidth</div><div class="ttdef"><b>Definition:</b> sdlSF.h:75</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

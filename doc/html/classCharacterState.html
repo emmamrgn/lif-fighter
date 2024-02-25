@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LIF_FIGHTERS by Sasha&amp;Emma: Référence de la classe CharacterState</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LIF_FIGHTERS by Sasha&amp;Emma
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="classCharacterState-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe CharacterState</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>La classe <a class="el" href="classCharacterState.html" title="La classe CharacterState est définie par une énumeration de différents états que le fighter peut avoi...">CharacterState</a> est définie par une énumeration de différents états que le fighter peut avoir.  
+ <a href="classCharacterState.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="CharacterState_8h_source.html">CharacterState.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:affd8ad6f18dcd7accfe5a79921c8e89e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89e">States</a> { <br />
+&#160;&#160;<a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89eabb5eb24d28d319636f8f6bd7e4a21d17">IDLE</a>
+, <a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89ea725209d469920c5ac5a874190d3b9f03">WALK</a>
+, <a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89ead139d98642eb56af61d4f9b3b1a6eb77">WALKBACK</a>
+, <a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89ea315ae81caf88ec7099043059fbf608f9">CROUCH</a>
+, <br />
+&#160;&#160;<a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89eaba28625906c416edde3b841c2cb48428">JUMP</a>
+, <a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89eaca4263cb1d8743a7bcf5312d2a7e3821">PUNCH</a>
+, <a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89eac65cedeb9c886117c713852a6df1e992">KICK</a>
+, <a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89ea16ff478f7977de5ce0ee1151fac8b130">HIT</a>
+, <br />
+&#160;&#160;<a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89eac875acafd8f8cfdabbc3dcd94fee181a">START</a>
+, <a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89ea8d60cd3a1dda44dc0141379631c8d532">LOSER</a>
+, <a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89eaef9141579ae34b083e4c72e7c4ac07b0">WINNER</a>
+<br />
+ }</td></tr>
+<tr class="separator:affd8ad6f18dcd7accfe5a79921c8e89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:abe9bcd871b173ad3312d71e3165b1bfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#abe9bcd871b173ad3312d71e3165b1bfb">CharacterState</a> ()</td></tr>
+<tr class="memdesc:abe9bcd871b173ad3312d71e3165b1bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construit un objet <a class="el" href="classCharacterState.html" title="La classe CharacterState est définie par une énumeration de différents états que le fighter peut avoi...">CharacterState</a>.  <a href="classCharacterState.html#abe9bcd871b173ad3312d71e3165b1bfb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abe9bcd871b173ad3312d71e3165b1bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690e946cdc5647403c79fbcc543aafc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#a690e946cdc5647403c79fbcc543aafc9">~CharacterState</a> ()</td></tr>
+<tr class="memdesc:a690e946cdc5647403c79fbcc543aafc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Détruit un objet <a class="el" href="classCharacterState.html" title="La classe CharacterState est définie par une énumeration de différents états que le fighter peut avoi...">CharacterState</a>.  <a href="classCharacterState.html#a690e946cdc5647403c79fbcc543aafc9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a690e946cdc5647403c79fbcc543aafc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade65d5b384e5b6770a012a71bb9b48cc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#ade65d5b384e5b6770a012a71bb9b48cc">GetStateString</a> (<a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89e">States</a> <a class="el" href="classCharacterState.html#a437f66b232c9e1faf155f63b1fae3f69">state</a>)</td></tr>
+<tr class="memdesc:ade65d5b384e5b6770a012a71bb9b48cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">récupère l'état du fighter et retourne son string associé  <a href="classCharacterState.html#ade65d5b384e5b6770a012a71bb9b48cc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ade65d5b384e5b6770a012a71bb9b48cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf00d83bbab593d010278e63316c6108"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#adf00d83bbab593d010278e63316c6108">GetCurrentStateString</a> ()</td></tr>
+<tr class="memdesc:adf00d83bbab593d010278e63316c6108"><td class="mdescLeft">&#160;</td><td class="mdescRight">recupère et renvoie un string représentant l'état actuel d'une instance de la classe "CharacterState" Cette fonction permet de réduire les risques d'erreurs lors de la conversions des énumérations d'état en string.  <a href="classCharacterState.html#adf00d83bbab593d010278e63316c6108">Plus de détails...</a><br /></td></tr>
+<tr class="separator:adf00d83bbab593d010278e63316c6108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f3fad74fe2fd1fc98e5dd95e7dd08b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#a40f3fad74fe2fd1fc98e5dd95e7dd08b">Idle</a> ()</td></tr>
+<tr class="memdesc:a40f3fad74fe2fd1fc98e5dd95e7dd08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "IDLE" vérifie si état actuel est déjà "IDLE" en comparant avec valeur de l'énumération "States::IDLE" si c'est le cas, fonction se termine. Sinon, fonction modifie énumération avec opérateur d'affectation.  <a href="classCharacterState.html#a40f3fad74fe2fd1fc98e5dd95e7dd08b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a40f3fad74fe2fd1fc98e5dd95e7dd08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e5659f8168331be8ead1106cbd6348"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#a82e5659f8168331be8ead1106cbd6348">Start</a> ()</td></tr>
+<tr class="memdesc:a82e5659f8168331be8ead1106cbd6348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "START".  <a href="classCharacterState.html#a82e5659f8168331be8ead1106cbd6348">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a82e5659f8168331be8ead1106cbd6348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a781079fd7d5d97ac2c8a4ab421eece"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#a6a781079fd7d5d97ac2c8a4ab421eece">Walk</a> ()</td></tr>
+<tr class="memdesc:a6a781079fd7d5d97ac2c8a4ab421eece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "WALK".  <a href="classCharacterState.html#a6a781079fd7d5d97ac2c8a4ab421eece">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6a781079fd7d5d97ac2c8a4ab421eece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc581096a8cfbbed2725561f2b5a3d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#a0cc581096a8cfbbed2725561f2b5a3d4">Walkback</a> ()</td></tr>
+<tr class="memdesc:a0cc581096a8cfbbed2725561f2b5a3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "WALKBACK".  <a href="classCharacterState.html#a0cc581096a8cfbbed2725561f2b5a3d4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0cc581096a8cfbbed2725561f2b5a3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44961649c9e62bbdaf468bf5c69e9fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#ad44961649c9e62bbdaf468bf5c69e9fa">Jump</a> ()</td></tr>
+<tr class="memdesc:ad44961649c9e62bbdaf468bf5c69e9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "JUMP".  <a href="classCharacterState.html#ad44961649c9e62bbdaf468bf5c69e9fa">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad44961649c9e62bbdaf468bf5c69e9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e6863679ce89ccddaefe33e05036a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#ab8e6863679ce89ccddaefe33e05036a9">Crouch</a> ()</td></tr>
+<tr class="memdesc:ab8e6863679ce89ccddaefe33e05036a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "CROUCH".  <a href="classCharacterState.html#ab8e6863679ce89ccddaefe33e05036a9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab8e6863679ce89ccddaefe33e05036a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5155e584081425a03fb430ee947a7fc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#a5155e584081425a03fb430ee947a7fc2">Kick</a> ()</td></tr>
+<tr class="memdesc:a5155e584081425a03fb430ee947a7fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "KICK".  <a href="classCharacterState.html#a5155e584081425a03fb430ee947a7fc2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5155e584081425a03fb430ee947a7fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05be562dd62be5258e7feb269e7eec02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#a05be562dd62be5258e7feb269e7eec02">Punch</a> ()</td></tr>
+<tr class="memdesc:a05be562dd62be5258e7feb269e7eec02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "PUNCH".  <a href="classCharacterState.html#a05be562dd62be5258e7feb269e7eec02">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a05be562dd62be5258e7feb269e7eec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2a532c373452872b987caa120d8ff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#ade2a532c373452872b987caa120d8ff0">Hit</a> ()</td></tr>
+<tr class="memdesc:ade2a532c373452872b987caa120d8ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "HIT".  <a href="classCharacterState.html#ade2a532c373452872b987caa120d8ff0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ade2a532c373452872b987caa120d8ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df3161cbebd70170a7adffb1f33d5a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#a2df3161cbebd70170a7adffb1f33d5a4">Loser</a> ()</td></tr>
+<tr class="memdesc:a2df3161cbebd70170a7adffb1f33d5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "LOST".  <a href="classCharacterState.html#a2df3161cbebd70170a7adffb1f33d5a4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2df3161cbebd70170a7adffb1f33d5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66242a6c4a1e5903d57d4c3214c9d3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#ab66242a6c4a1e5903d57d4c3214c9d3f">Winner</a> ()</td></tr>
+<tr class="memdesc:ab66242a6c4a1e5903d57d4c3214c9d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met l'état d'une instance de la classe "CharacterState" à "WON".  <a href="classCharacterState.html#ab66242a6c4a1e5903d57d4c3214c9d3f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab66242a6c4a1e5903d57d4c3214c9d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7555e4dcde6053663f6f3cfe6a57fccd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#a7555e4dcde6053663f6f3cfe6a57fccd">RegressionTest</a> ()</td></tr>
+<tr class="separator:a7555e4dcde6053663f6f3cfe6a57fccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:a437f66b232c9e1faf155f63b1fae3f69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89e">States</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#a437f66b232c9e1faf155f63b1fae3f69">state</a> = States::START</td></tr>
+<tr class="separator:a437f66b232c9e1faf155f63b1fae3f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd39e20284fccad82bd398ad575d87e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharacterState.html#afdd39e20284fccad82bd398ad575d87e">ResetFrames</a> = false</td></tr>
+<tr class="separator:afdd39e20284fccad82bd398ad575d87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>La classe <a class="el" href="classCharacterState.html" title="La classe CharacterState est définie par une énumeration de différents états que le fighter peut avoi...">CharacterState</a> est définie par une énumeration de différents états que le fighter peut avoir. </p>
+</div><h2 class="groupheader">Documentation des énumérations membres</h2>
+<a id="affd8ad6f18dcd7accfe5a79921c8e89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd8ad6f18dcd7accfe5a79921c8e89e">&#9670;&nbsp;</a></span>States</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89e">CharacterState::States</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89eabb5eb24d28d319636f8f6bd7e4a21d17"></a>IDLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89ea725209d469920c5ac5a874190d3b9f03"></a>WALK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89ead139d98642eb56af61d4f9b3b1a6eb77"></a>WALKBACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89ea315ae81caf88ec7099043059fbf608f9"></a>CROUCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89eaba28625906c416edde3b841c2cb48428"></a>JUMP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89eaca4263cb1d8743a7bcf5312d2a7e3821"></a>PUNCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89eac65cedeb9c886117c713852a6df1e992"></a>KICK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89ea16ff478f7977de5ce0ee1151fac8b130"></a>HIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89eac875acafd8f8cfdabbc3dcd94fee181a"></a>START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89ea8d60cd3a1dda44dc0141379631c8d532"></a>LOSER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="affd8ad6f18dcd7accfe5a79921c8e89eaef9141579ae34b083e4c72e7c4ac07b0"></a>WINNER&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="abe9bcd871b173ad3312d71e3165b1bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe9bcd871b173ad3312d71e3165b1bfb">&#9670;&nbsp;</a></span>CharacterState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CharacterState::CharacterState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construit un objet <a class="el" href="classCharacterState.html" title="La classe CharacterState est définie par une énumeration de différents états que le fighter peut avoi...">CharacterState</a>. </p>
+
+</div>
+</div>
+<a id="a690e946cdc5647403c79fbcc543aafc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a690e946cdc5647403c79fbcc543aafc9">&#9670;&nbsp;</a></span>~CharacterState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CharacterState::~CharacterState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Détruit un objet <a class="el" href="classCharacterState.html" title="La classe CharacterState est définie par une énumeration de différents états que le fighter peut avoi...">CharacterState</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="ab8e6863679ce89ccddaefe33e05036a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e6863679ce89ccddaefe33e05036a9">&#9670;&nbsp;</a></span>Crouch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Crouch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "CROUCH". </p>
+
+</div>
+</div>
+<a id="adf00d83bbab593d010278e63316c6108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf00d83bbab593d010278e63316c6108">&#9670;&nbsp;</a></span>GetCurrentStateString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CharacterState::GetCurrentStateString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recupère et renvoie un string représentant l'état actuel d'une instance de la classe "CharacterState" Cette fonction permet de réduire les risques d'erreurs lors de la conversions des énumérations d'état en string. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>string : état du fighter </dd></dl>
+
+</div>
+</div>
+<a id="ade65d5b384e5b6770a012a71bb9b48cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade65d5b384e5b6770a012a71bb9b48cc">&#9670;&nbsp;</a></span>GetStateString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CharacterState::GetStateString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89e">States</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>récupère l'état du fighter et retourne son string associé </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>: un argument de l'énumération de type "States" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>string : état du fighter </dd></dl>
+
+</div>
+</div>
+<a id="ade2a532c373452872b987caa120d8ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade2a532c373452872b987caa120d8ff0">&#9670;&nbsp;</a></span>Hit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Hit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "HIT". </p>
+
+</div>
+</div>
+<a id="a40f3fad74fe2fd1fc98e5dd95e7dd08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f3fad74fe2fd1fc98e5dd95e7dd08b">&#9670;&nbsp;</a></span>Idle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Idle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "IDLE" vérifie si état actuel est déjà "IDLE" en comparant avec valeur de l'énumération "States::IDLE" si c'est le cas, fonction se termine. Sinon, fonction modifie énumération avec opérateur d'affectation. </p>
+<ul>
+<li>réinitialisation des Frames pour effectuer cet état ou un autre de nouveau. </li>
+</ul>
+
+</div>
+</div>
+<a id="ad44961649c9e62bbdaf468bf5c69e9fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44961649c9e62bbdaf468bf5c69e9fa">&#9670;&nbsp;</a></span>Jump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Jump </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "JUMP". </p>
+
+</div>
+</div>
+<a id="a5155e584081425a03fb430ee947a7fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5155e584081425a03fb430ee947a7fc2">&#9670;&nbsp;</a></span>Kick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Kick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "KICK". </p>
+
+</div>
+</div>
+<a id="a2df3161cbebd70170a7adffb1f33d5a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df3161cbebd70170a7adffb1f33d5a4">&#9670;&nbsp;</a></span>Loser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Loser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "LOST". </p>
+
+</div>
+</div>
+<a id="a05be562dd62be5258e7feb269e7eec02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05be562dd62be5258e7feb269e7eec02">&#9670;&nbsp;</a></span>Punch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Punch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "PUNCH". </p>
+
+</div>
+</div>
+<a id="a7555e4dcde6053663f6f3cfe6a57fccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7555e4dcde6053663f6f3cfe6a57fccd">&#9670;&nbsp;</a></span>RegressionTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::RegressionTest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82e5659f8168331be8ead1106cbd6348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e5659f8168331be8ead1106cbd6348">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "START". </p>
+<p>///////////////////////////////////////////////// </p>
+
+</div>
+</div>
+<a id="a6a781079fd7d5d97ac2c8a4ab421eece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a781079fd7d5d97ac2c8a4ab421eece">&#9670;&nbsp;</a></span>Walk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Walk </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "WALK". </p>
+
+</div>
+</div>
+<a id="a0cc581096a8cfbbed2725561f2b5a3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc581096a8cfbbed2725561f2b5a3d4">&#9670;&nbsp;</a></span>Walkback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Walkback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "WALKBACK". </p>
+
+</div>
+</div>
+<a id="ab66242a6c4a1e5903d57d4c3214c9d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66242a6c4a1e5903d57d4c3214c9d3f">&#9670;&nbsp;</a></span>Winner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CharacterState::Winner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met l'état d'une instance de la classe "CharacterState" à "WON". </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="afdd39e20284fccad82bd398ad575d87e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd39e20284fccad82bd398ad575d87e">&#9670;&nbsp;</a></span>ResetFrames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CharacterState::ResetFrames = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a437f66b232c9e1faf155f63b1fae3f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437f66b232c9e1faf155f63b1fae3f69">&#9670;&nbsp;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCharacterState.html#affd8ad6f18dcd7accfe5a79921c8e89e">States</a> CharacterState::state = States::START</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>src/core/<a class="el" href="CharacterState_8h_source.html">CharacterState.h</a></li>
+<li>src/core/<a class="el" href="CharacterState_8cpp.html">CharacterState.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

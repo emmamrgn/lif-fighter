@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LIF_FIGHTERS by Sasha&amp;Emma:  Fichier source de src/txt/winTXT.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LIF_FIGHTERS by Sasha&amp;Emma
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_74d70b51b5aa2eb3cb5baf13d2756485.html">txt</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">winTXT.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="winTXT_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="classwinTXT.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwinTXT.html">winTXT</a></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">private</span>: </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordtype">int</span> dimX, dimY;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">char</span>* win;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="classwinTXT.html#a1eab65442a497a6d2262f16bc05f7929">winTXT</a> (<span class="keywordtype">int</span> dx, <span class="keywordtype">int</span> dy);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinTXT.html#ad6ab4d004eeb4f89c74ee52636957519">clear</a> (<span class="keywordtype">char</span> c=<span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinTXT.html#a8da22f041e822ff35bb72ed93805e595">print</a> (<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">char</span> c);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinTXT.html#a8da22f041e822ff35bb72ed93805e595">print</a> (<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">char</span>* c);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwinTXT.html#a5790569ef24358d870909651a63658e8">draw</a> (<span class="keywordtype">int</span> x=0, <span class="keywordtype">int</span> y=0);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//    void pause();</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="classwinTXT.html#af564fbc09b8a299f9bc724e670676985">getCh</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="winTXT_8h.html#a486c44eda96b2098cd421fda51c1b01d">terminalClear</a> (); <span class="comment">//clear le terminal</span></div>
+<div class="ttc" id="aclasswinTXT_html"><div class="ttname"><a href="classwinTXT.html">winTXT</a></div><div class="ttdef"><b>Definition:</b> winTXT.h:4</div></div>
+<div class="ttc" id="aclasswinTXT_html_a1eab65442a497a6d2262f16bc05f7929"><div class="ttname"><a href="classwinTXT.html#a1eab65442a497a6d2262f16bc05f7929">winTXT::winTXT</a></div><div class="ttdeci">winTXT(int dx, int dy)</div><div class="ttdef"><b>Definition:</b> winTXT.cpp:81</div></div>
+<div class="ttc" id="aclasswinTXT_html_a5790569ef24358d870909651a63658e8"><div class="ttname"><a href="classwinTXT.html#a5790569ef24358d870909651a63658e8">winTXT::draw</a></div><div class="ttdeci">void draw(int x=0, int y=0)</div><div class="ttdef"><b>Definition:</b> winTXT.cpp:116</div></div>
+<div class="ttc" id="aclasswinTXT_html_a8da22f041e822ff35bb72ed93805e595"><div class="ttname"><a href="classwinTXT.html#a8da22f041e822ff35bb72ed93805e595">winTXT::print</a></div><div class="ttdeci">void print(int x, int y, char c)</div><div class="ttdef"><b>Definition:</b> winTXT.cpp:101</div></div>
+<div class="ttc" id="aclasswinTXT_html_ad6ab4d004eeb4f89c74ee52636957519"><div class="ttname"><a href="classwinTXT.html#ad6ab4d004eeb4f89c74ee52636957519">winTXT::clear</a></div><div class="ttdeci">void clear(char c=' ')</div><div class="ttdef"><b>Definition:</b> winTXT.cpp:90</div></div>
+<div class="ttc" id="aclasswinTXT_html_af564fbc09b8a299f9bc724e670676985"><div class="ttname"><a href="classwinTXT.html#af564fbc09b8a299f9bc724e670676985">winTXT::getCh</a></div><div class="ttdeci">char getCh()</div><div class="ttdef"><b>Definition:</b> winTXT.cpp:141</div></div>
+<div class="ttc" id="awinTXT_8h_html_a486c44eda96b2098cd421fda51c1b01d"><div class="ttname"><a href="winTXT_8h.html#a486c44eda96b2098cd421fda51c1b01d">terminalClear</a></div><div class="ttdeci">void terminalClear()</div><div class="ttdef"><b>Definition:</b> winTXT.cpp:72</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

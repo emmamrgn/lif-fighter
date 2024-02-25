@@ -1,0 +1,168 @@
+\hypertarget{classGame}{}\doxysection{Référence de la classe Game}
+\label{classGame}\index{Game@{Game}}
+
+
+La classe \mbox{\hyperlink{classGame}{Game}} est définie par 2 \mbox{\hyperlink{classFighter}{Fighter}}, un \mbox{\hyperlink{classField}{Field}}.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Construit un \mbox{\hyperlink{classGame}{Game}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Detruit le \mbox{\hyperlink{classGame}{Game}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFighter}{Fighter}} \& \mbox{\hyperlink{classGame_af35d231beac75d8fe5a51d3224f27f75}{get\+Player1}} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le fighter Player1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFighter}{Fighter}} \& \mbox{\hyperlink{classGame_ad5bb681100ccccee6b36f143209488dc}{get\+Player2}} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le fighter Player2. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classField}{Field}} \& \mbox{\hyperlink{classGame_af5c039edc24e8ccb7050bbcc565b1b7b}{getconst\+Field}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie le \mbox{\hyperlink{classField}{Field}} du \mbox{\hyperlink{classGame}{Game}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classFighter}{Fighter}} \& \mbox{\hyperlink{classGame_a15e1508916369b2aed1bf6bfa857e924}{getconst\+Fighter1}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie le fighter Player 1. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classFighter}{Fighter}} \& \mbox{\hyperlink{classGame_ac39a453ef29811743ba60b9139062964}{getconst\+Fighter2}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie le fighter Player 2. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_a0e614c75e76b7a1e763ca8794950a8b5}{keyboard\+Action\+P1}} (const char keybind)
+\begin{DoxyCompactList}\small\item\em Renvoie vraie lorsque qu\textquotesingle{}une touche du clavier est touchée pour le Player1, faux sinon. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_a15c0cb385a659b9cdd4fda12a9eeb21e}{keyboard\+Action\+P2}} (const char keybind)
+\begin{DoxyCompactList}\small\item\em Renvoie vraie lorsque qu\textquotesingle{}une touche du clavier est touchée pour le Player2, faux sinon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a508ea49cb57c2dd9afa76b56d6e66e73}{regression\+Test}} ()
+\begin{DoxyCompactList}\small\item\em test de régression pour tester les fonctions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+La classe \mbox{\hyperlink{classGame}{Game}} est définie par 2 \mbox{\hyperlink{classFighter}{Fighter}}, un \mbox{\hyperlink{classField}{Field}}. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construit un \mbox{\hyperlink{classGame}{Game}}. 
+
+\mbox{\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Detruit le \mbox{\hyperlink{classGame}{Game}}. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classGame_af5c039edc24e8ccb7050bbcc565b1b7b}\label{classGame_af5c039edc24e8ccb7050bbcc565b1b7b}} 
+\index{Game@{Game}!getconstField@{getconstField}}
+\index{getconstField@{getconstField}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getconstField()}{getconstField()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classField}{Field}} \& Game\+::getconst\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie le \mbox{\hyperlink{classField}{Field}} du \mbox{\hyperlink{classGame}{Game}}. 
+
+\begin{DoxyReturn}{Renvoie}
+const \mbox{\hyperlink{classField}{Field}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a15e1508916369b2aed1bf6bfa857e924}\label{classGame_a15e1508916369b2aed1bf6bfa857e924}} 
+\index{Game@{Game}!getconstFighter1@{getconstFighter1}}
+\index{getconstFighter1@{getconstFighter1}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getconstFighter1()}{getconstFighter1()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classFighter}{Fighter}} \& Game\+::getconst\+Fighter1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie le fighter Player 1. 
+
+\begin{DoxyReturn}{Renvoie}
+const \mbox{\hyperlink{classFighter}{Fighter}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_ac39a453ef29811743ba60b9139062964}\label{classGame_ac39a453ef29811743ba60b9139062964}} 
+\index{Game@{Game}!getconstFighter2@{getconstFighter2}}
+\index{getconstFighter2@{getconstFighter2}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getconstFighter2()}{getconstFighter2()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classFighter}{Fighter}} \& Game\+::getconst\+Fighter2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie le fighter Player 2. 
+
+\begin{DoxyReturn}{Renvoie}
+const \mbox{\hyperlink{classFighter}{Fighter}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_af35d231beac75d8fe5a51d3224f27f75}\label{classGame_af35d231beac75d8fe5a51d3224f27f75}} 
+\index{Game@{Game}!getPlayer1@{getPlayer1}}
+\index{getPlayer1@{getPlayer1}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getPlayer1()}{getPlayer1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFighter}{Fighter}} \& Game\+::get\+Player1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renvoie le fighter Player1. 
+
+\mbox{\Hypertarget{classGame_ad5bb681100ccccee6b36f143209488dc}\label{classGame_ad5bb681100ccccee6b36f143209488dc}} 
+\index{Game@{Game}!getPlayer2@{getPlayer2}}
+\index{getPlayer2@{getPlayer2}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getPlayer2()}{getPlayer2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFighter}{Fighter}} \& Game\+::get\+Player2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renvoie le fighter Player2. 
+
+\mbox{\Hypertarget{classGame_a0e614c75e76b7a1e763ca8794950a8b5}\label{classGame_a0e614c75e76b7a1e763ca8794950a8b5}} 
+\index{Game@{Game}!keyboardActionP1@{keyboardActionP1}}
+\index{keyboardActionP1@{keyboardActionP1}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{keyboardActionP1()}{keyboardActionP1()}}
+{\footnotesize\ttfamily bool Game\+::keyboard\+Action\+P1 (\begin{DoxyParamCaption}\item[{const char}]{keybind }\end{DoxyParamCaption})}
+
+
+
+Renvoie vraie lorsque qu\textquotesingle{}une touche du clavier est touchée pour le Player1, faux sinon. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em keybind} & \+: la touche du clavier pressée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a15c0cb385a659b9cdd4fda12a9eeb21e}\label{classGame_a15c0cb385a659b9cdd4fda12a9eeb21e}} 
+\index{Game@{Game}!keyboardActionP2@{keyboardActionP2}}
+\index{keyboardActionP2@{keyboardActionP2}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{keyboardActionP2()}{keyboardActionP2()}}
+{\footnotesize\ttfamily bool Game\+::keyboard\+Action\+P2 (\begin{DoxyParamCaption}\item[{const char}]{keybind }\end{DoxyParamCaption})}
+
+
+
+Renvoie vraie lorsque qu\textquotesingle{}une touche du clavier est touchée pour le Player2, faux sinon. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em keybind} & \+: la touche du clavier pressée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a508ea49cb57c2dd9afa76b56d6e66e73}\label{classGame_a508ea49cb57c2dd9afa76b56d6e66e73}} 
+\index{Game@{Game}!regressionTest@{regressionTest}}
+\index{regressionTest@{regressionTest}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{regressionTest()}{regressionTest()}}
+{\footnotesize\ttfamily void Game\+::regression\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+test de régression pour tester les fonctions 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Game_8h}{Game.\+h}}\item 
+src/core/\mbox{\hyperlink{Game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

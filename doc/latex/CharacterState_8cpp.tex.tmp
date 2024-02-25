@@ -1,0 +1,18 @@
+\hypertarget{CharacterState_8cpp}{}\doxysection{Référence du fichier src/core/\+Character\+State.cpp}
+\label{CharacterState_8cpp}\index{src/core/CharacterState.cpp@{src/core/CharacterState.cpp}}
+
+
+Module qui gère l\textquotesingle{}état du personnage.  
+
+
+{\ttfamily \#include \char`\"{}Character\+State.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de Character\+State.\+cpp\+:
+% FIG 0
+
+
+\doxysubsection{Description détaillée}
+Module qui gère l\textquotesingle{}état du personnage. 
+
+\begin{DoxyDate}{Date}
+2023-\/04-\/29 
+\end{DoxyDate}

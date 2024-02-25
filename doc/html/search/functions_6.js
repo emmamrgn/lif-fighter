@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['game_225',['Game',['../classGame.html#ad59df6562a58a614fda24622d3715b65',1,'Game']]],
+  ['getch_226',['getCh',['../classwinTXT.html#af564fbc09b8a299f9bc724e670676985',1,'winTXT']]],
+  ['getconstfield_227',['getconstField',['../classGame.html#af5c039edc24e8ccb7050bbcc565b1b7b',1,'Game']]],
+  ['getconstfighter1_228',['getconstFighter1',['../classGame.html#a15e1508916369b2aed1bf6bfa857e924',1,'Game']]],
+  ['getconstfighter2_229',['getconstFighter2',['../classGame.html#ac39a453ef29811743ba60b9139062964',1,'Game']]],
+  ['getcurrentstatestring_230',['GetCurrentStateString',['../classCharacterState.html#adf00d83bbab593d010278e63316c6108',1,'CharacterState']]],
+  ['getdimx_231',['getDimX',['../classField.html#adcc0599da9c2c3141e19e1d9c166f0ef',1,'Field']]],
+  ['getdimy_232',['getDimY',['../classField.html#a5ce6120253e2ee32a87f242d47dc60aa',1,'Field']]],
+  ['gethealth_233',['getHealth',['../classFighter.html#a27d344616cf5665ffb6079b221a2e08f',1,'Fighter']]],
+  ['gethitbox_234',['gethitbox',['../classFighter.html#a6b014d7c312371b6126fcf23a8b7d965',1,'Fighter']]],
+  ['getinstance_235',['GetInstance',['../classResourceManager.html#a98b11a6302bf0db4ffc81eea70512ee2',1,'ResourceManager']]],
+  ['getplayer1_236',['getPlayer1',['../classGame.html#af35d231beac75d8fe5a51d3224f27f75',1,'Game']]],
+  ['getplayer2_237',['getPlayer2',['../classGame.html#ad5bb681100ccccee6b36f143209488dc',1,'Game']]],
+  ['getposition_238',['getPosition',['../classHitbox.html#a086ca204e750783c46d9a82239204908',1,'Hitbox']]],
+  ['getpositionx_239',['getPositionX',['../classFighter.html#a827c63fc7d5e41cb786d752099541b43',1,'Fighter::getPositionX()'],['../classHitbox.html#adc5018bc896f39597b28fca2caf00c24',1,'Hitbox::getPositionX()']]],
+  ['getpositiony_240',['getPositionY',['../classFighter.html#a8aa76cd5dbb798b6cb32b45cc52435bd',1,'Fighter::getPositionY()'],['../classHitbox.html#a7686c0a7d0f8b96e3a2426a196b1b8bd',1,'Hitbox::getPositionY()']]],
+  ['getsizeh_241',['getSizeH',['../classHitbox.html#a92328ead399996160305197298a5cd6f',1,'Hitbox']]],
+  ['getsizew_242',['getSizeW',['../classHitbox.html#a97664a92b8cc2130b8d9b00784d76376',1,'Hitbox']]],
+  ['getstatestring_243',['GetStateString',['../classCharacterState.html#ade65d5b384e5b6770a012a71bb9b48cc',1,'CharacterState']]],
+  ['getsurface_244',['getSurface',['../classPic.html#a69592b403441d075b4c0b5be10c00a45',1,'Pic']]],
+  ['getsurface_245',['GetSurface',['../classResourceManager.html#a31d758ae7d5a972154ccc7dae2144166',1,'ResourceManager']]],
+  ['gettexture_246',['getTexture',['../classPic.html#a798ca7c76adef92a84f8c5f7f0e3769a',1,'Pic']]],
+  ['getxyaschar_247',['getXYasChar',['../classField.html#a34bcea8a73b985accc88b7d9769eaa7b',1,'Field']]]
+];

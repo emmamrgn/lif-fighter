@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LIF_FIGHTERS by Sasha&amp;Emma:  Fichier source de src/core/Game.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LIF_FIGHTERS by Sasha&amp;Emma
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Game.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Game_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Fighter_8h.html">Fighter.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Field_8h.html">Field.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Hitbox_8h.html">Hitbox.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classGame.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGame.html">Game</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classGame.html#ad59df6562a58a614fda24622d3715b65">Game</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classGame.html#ae3d112ca6e0e55150d2fdbc704474530">~Game</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classFighter.html">Fighter</a> &amp;<a class="code" href="classGame.html#af35d231beac75d8fe5a51d3224f27f75">getPlayer1</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classFighter.html">Fighter</a> &amp;<a class="code" href="classGame.html#ad5bb681100ccccee6b36f143209488dc">getPlayer2</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">const</span> <a class="code" href="classField.html">Field</a> &amp;<a class="code" href="classGame.html#af5c039edc24e8ccb7050bbcc565b1b7b">getconstField</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFighter.html">Fighter</a> &amp;<a class="code" href="classGame.html#a15e1508916369b2aed1bf6bfa857e924">getconstFighter1</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">const</span> <a class="code" href="classFighter.html">Fighter</a> &amp;<a class="code" href="classGame.html#ac39a453ef29811743ba60b9139062964">getconstFighter2</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classGame.html#a0e614c75e76b7a1e763ca8794950a8b5">keyboardActionP1</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> keybind);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classGame.html#a15c0cb385a659b9cdd4fda12a9eeb21e">keyboardActionP2</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> keybind);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classGame.html#a508ea49cb57c2dd9afa76b56d6e66e73">regressionTest</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classField.html">Field</a> F;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="classFighter.html">Fighter</a> Player1;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="classFighter.html">Fighter</a> Player2;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">//    Menu mainMenu;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> GRAVITY = 50;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="ttc" id="aField_8h_html"><div class="ttname"><a href="Field_8h.html">Field.h</a></div><div class="ttdoc">Module qui gère le terrain (Field)</div></div>
+<div class="ttc" id="aFighter_8h_html"><div class="ttname"><a href="Fighter_8h.html">Fighter.h</a></div><div class="ttdoc">Module qui gère un personnage (Fighter)</div></div>
+<div class="ttc" id="aHitbox_8h_html"><div class="ttname"><a href="Hitbox_8h.html">Hitbox.h</a></div><div class="ttdoc">Module qui gère les Hitbox d'un fighter.</div></div>
+<div class="ttc" id="aclassField_html"><div class="ttname"><a href="classField.html">Field</a></div><div class="ttdoc">La classe Field contient ses dimensions et un tab 2D de cases (1 case = 1 char)</div><div class="ttdef"><b>Definition:</b> Field.h:20</div></div>
+<div class="ttc" id="aclassFighter_html"><div class="ttname"><a href="classFighter.html">Fighter</a></div><div class="ttdoc">La classe Fighter est définie par sa position 2D (x,y), son nombre de point de vie et ses 2 Hitbox.</div><div class="ttdef"><b>Definition:</b> Fighter.h:23</div></div>
+<div class="ttc" id="aclassGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdoc">La classe Game est définie par 2 Fighter, un Field.</div><div class="ttdef"><b>Definition:</b> Game.h:20</div></div>
+<div class="ttc" id="aclassGame_html_a0e614c75e76b7a1e763ca8794950a8b5"><div class="ttname"><a href="classGame.html#a0e614c75e76b7a1e763ca8794950a8b5">Game::keyboardActionP1</a></div><div class="ttdeci">bool keyboardActionP1(const char keybind)</div><div class="ttdoc">Renvoie vraie lorsque qu'une touche du clavier est touchée pour le Player1, faux sinon.</div><div class="ttdef"><b>Definition:</b> Game.cpp:48</div></div>
+<div class="ttc" id="aclassGame_html_a15c0cb385a659b9cdd4fda12a9eeb21e"><div class="ttname"><a href="classGame.html#a15c0cb385a659b9cdd4fda12a9eeb21e">Game::keyboardActionP2</a></div><div class="ttdeci">bool keyboardActionP2(const char keybind)</div><div class="ttdoc">Renvoie vraie lorsque qu'une touche du clavier est touchée pour le Player2, faux sinon.</div><div class="ttdef"><b>Definition:</b> Game.cpp:78</div></div>
+<div class="ttc" id="aclassGame_html_a15e1508916369b2aed1bf6bfa857e924"><div class="ttname"><a href="classGame.html#a15e1508916369b2aed1bf6bfa857e924">Game::getconstFighter1</a></div><div class="ttdeci">const Fighter &amp; getconstFighter1() const</div><div class="ttdoc">Renvoie le fighter Player 1.</div><div class="ttdef"><b>Definition:</b> Game.cpp:33</div></div>
+<div class="ttc" id="aclassGame_html_a508ea49cb57c2dd9afa76b56d6e66e73"><div class="ttname"><a href="classGame.html#a508ea49cb57c2dd9afa76b56d6e66e73">Game::regressionTest</a></div><div class="ttdeci">void regressionTest()</div><div class="ttdoc">test de régression pour tester les fonctions</div><div class="ttdef"><b>Definition:</b> Game.cpp:108</div></div>
+<div class="ttc" id="aclassGame_html_ac39a453ef29811743ba60b9139062964"><div class="ttname"><a href="classGame.html#ac39a453ef29811743ba60b9139062964">Game::getconstFighter2</a></div><div class="ttdeci">const Fighter &amp; getconstFighter2() const</div><div class="ttdoc">Renvoie le fighter Player 2.</div><div class="ttdef"><b>Definition:</b> Game.cpp:38</div></div>
+<div class="ttc" id="aclassGame_html_ad59df6562a58a614fda24622d3715b65"><div class="ttname"><a href="classGame.html#ad59df6562a58a614fda24622d3715b65">Game::Game</a></div><div class="ttdeci">Game()</div><div class="ttdoc">Construit un Game.</div><div class="ttdef"><b>Definition:</b> Game.cpp:7</div></div>
+<div class="ttc" id="aclassGame_html_ad5bb681100ccccee6b36f143209488dc"><div class="ttname"><a href="classGame.html#ad5bb681100ccccee6b36f143209488dc">Game::getPlayer2</a></div><div class="ttdeci">Fighter &amp; getPlayer2()</div><div class="ttdoc">Renvoie le fighter Player2.</div><div class="ttdef"><b>Definition:</b> Game.cpp:28</div></div>
+<div class="ttc" id="aclassGame_html_ae3d112ca6e0e55150d2fdbc704474530"><div class="ttname"><a href="classGame.html#ae3d112ca6e0e55150d2fdbc704474530">Game::~Game</a></div><div class="ttdeci">~Game()</div><div class="ttdoc">Detruit le Game.</div><div class="ttdef"><b>Definition:</b> Game.cpp:21</div></div>
+<div class="ttc" id="aclassGame_html_af35d231beac75d8fe5a51d3224f27f75"><div class="ttname"><a href="classGame.html#af35d231beac75d8fe5a51d3224f27f75">Game::getPlayer1</a></div><div class="ttdeci">Fighter &amp; getPlayer1()</div><div class="ttdoc">Renvoie le fighter Player1.</div><div class="ttdef"><b>Definition:</b> Game.cpp:23</div></div>
+<div class="ttc" id="aclassGame_html_af5c039edc24e8ccb7050bbcc565b1b7b"><div class="ttname"><a href="classGame.html#af5c039edc24e8ccb7050bbcc565b1b7b">Game::getconstField</a></div><div class="ttdeci">const Field &amp; getconstField() const</div><div class="ttdoc">Renvoie le Field du Game.</div><div class="ttdef"><b>Definition:</b> Game.cpp:43</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

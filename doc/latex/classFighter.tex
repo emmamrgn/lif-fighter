@@ -1,0 +1,338 @@
+\hypertarget{classFighter}{}\doxysection{Référence de la classe Fighter}
+\label{classFighter}\index{Fighter@{Fighter}}
+
+
+La classe \mbox{\hyperlink{classFighter}{Fighter}} est définie par sa position 2D (x,y), son nombre de point de vie et ses 2 \mbox{\hyperlink{classHitbox}{Hitbox}}.  
+
+
+
+
+{\ttfamily \#include $<$Fighter.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFighter_ae1d4ac29ed8dac91af41e6396ee00dda}{Fighter}} ()
+\begin{DoxyCompactList}\small\item\em Construit un objet \mbox{\hyperlink{classFighter}{Fighter}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFighter_a46f19abb9c0f7f6782748f6bd8935526}{Fighter}} (int x, int y, int hp, int height, int width)
+\begin{DoxyCompactList}\small\item\em Construit un objet \mbox{\hyperlink{classFighter}{Fighter}} avec ses paramètres. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFighter_a7c7f2ffa4724887e564af51a6154b703}{$\sim$\+Fighter}} ()
+\begin{DoxyCompactList}\small\item\em Detruit un objet \mbox{\hyperlink{classFighter}{Fighter}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_a5d9137b0025499c791fdc6e949456b4f}{set\+Position}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Définit la position d\textquotesingle{}un fighter. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFighter_a827c63fc7d5e41cb786d752099541b43}{get\+PositionX}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}abscisse de la position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFighter_a8aa76cd5dbb798b6cb32b45cc52435bd}{get\+PositionY}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}ordonnée de la position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_aa306b7d2a36bb70922045a59600dcbe8}{set\+Health}} (const int hp)
+\begin{DoxyCompactList}\small\item\em Defini les points de vie du fighter. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFighter_a27d344616cf5665ffb6079b221a2e08f}{get\+Health}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie les point de vie du fighter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_a85c75a7a7d7cefc9db99bed062b6d604}{left}} (const \mbox{\hyperlink{classField}{Field}} \&f)
+\begin{DoxyCompactList}\small\item\em Déplacement du fighter vers la gauche. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_a2c61e34663a3cae7f57f80ad75e8dc49}{right}} (const \mbox{\hyperlink{classField}{Field}} \&f)
+\begin{DoxyCompactList}\small\item\em Déplacement du fighter vers la droite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_a51fc8b36261deec0f4788e6b4e642ad7}{jump}} (const \mbox{\hyperlink{classField}{Field}} \&f)
+\begin{DoxyCompactList}\small\item\em Action de saut du fighter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_a32af2dfb5259ec1bdad1ee8aef04c022}{crouch}} (const \mbox{\hyperlink{classField}{Field}} \&f)
+\begin{DoxyCompactList}\small\item\em Action d\textquotesingle{}accroupissement du fighter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_abae6df5e74e29ff7cfa5371fd85c2144}{start}} (const \mbox{\hyperlink{classField}{Field}} \&f)
+\begin{DoxyCompactList}\small\item\em Action de début du fighter. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFighter_a9a4c68746f34d60589c8d1e8d444c3a4}{is\+Colliding}} (const \mbox{\hyperlink{classFighter}{Fighter}} \&Player2)
+\begin{DoxyCompactList}\small\item\em Renvoie un booléen si un fighter est en collision avec un autre fighter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_a6ca3f964dd3b5093b4c5c62e161504e6}{kick}} (\mbox{\hyperlink{classFighter}{Fighter}} \&P2)
+\begin{DoxyCompactList}\small\item\em Renvoie vraie si le fighter fait l\textquotesingle{}action de kick. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_a443d1319dea281903bde137ac5884cf3}{punch}} (\mbox{\hyperlink{classFighter}{Fighter}} \&P2)
+\begin{DoxyCompactList}\small\item\em Renvoie vraie si le fighter fait l\textquotesingle{}action de punch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_a6bd6958fc90cf5395f2153425fcc5d03}{sethitbox}} (int X, int Y, float width, float height)
+\begin{DoxyCompactList}\small\item\em Defini la hitbox de défense du fighter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHitbox}{Hitbox}} \mbox{\hyperlink{classFighter_a6b014d7c312371b6126fcf23a8b7d965}{gethitbox}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la hitbox d\textquotesingle{}de défense du fighter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFighter_a2e5a72b700b43d2a7b5c211a1335ed81}{Regression\+Test}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCharacterState}{Character\+State}} \mbox{\hyperlink{classFighter_adc6af07e997ddc575b1132ee2af92cdb}{Player\+State}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+La classe \mbox{\hyperlink{classFighter}{Fighter}} est définie par sa position 2D (x,y), son nombre de point de vie et ses 2 \mbox{\hyperlink{classHitbox}{Hitbox}}. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classFighter_ae1d4ac29ed8dac91af41e6396ee00dda}\label{classFighter_ae1d4ac29ed8dac91af41e6396ee00dda}} 
+\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{Fighter()}{Fighter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fighter\+::\+Fighter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construit un objet \mbox{\hyperlink{classFighter}{Fighter}}. 
+
+\mbox{\Hypertarget{classFighter_a46f19abb9c0f7f6782748f6bd8935526}\label{classFighter_a46f19abb9c0f7f6782748f6bd8935526}} 
+\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\index{Fighter@{Fighter}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{Fighter()}{Fighter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fighter\+::\+Fighter (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{hp,  }\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Construit un objet \mbox{\hyperlink{classFighter}{Fighter}} avec ses paramètres. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & \+: abscisse de la position du fighter \\
+\hline
+{\em y} & \+: ordonnée de la postion du fighter \\
+\hline
+{\em hp} & \+: son nombre de point de vie \\
+\hline
+{\em width} & \+: largeur du fighter \\
+\hline
+{\em height} & \+: hauteur du fighter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighter_a7c7f2ffa4724887e564af51a6154b703}\label{classFighter_a7c7f2ffa4724887e564af51a6154b703}} 
+\index{Fighter@{Fighter}!````~Fighter@{$\sim$Fighter}}
+\index{````~Fighter@{$\sim$Fighter}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fighter()}{~Fighter()}}
+{\footnotesize\ttfamily Fighter\+::$\sim$\+Fighter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Detruit un objet \mbox{\hyperlink{classFighter}{Fighter}}. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classFighter_a32af2dfb5259ec1bdad1ee8aef04c022}\label{classFighter_a32af2dfb5259ec1bdad1ee8aef04c022}} 
+\index{Fighter@{Fighter}!crouch@{crouch}}
+\index{crouch@{crouch}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{crouch()}{crouch()}}
+{\footnotesize\ttfamily void Fighter\+::crouch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classField}{Field}} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Action d\textquotesingle{}accroupissement du fighter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighter_a27d344616cf5665ffb6079b221a2e08f}\label{classFighter_a27d344616cf5665ffb6079b221a2e08f}} 
+\index{Fighter@{Fighter}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Fighter\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie les point de vie du fighter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em hp} & \+: points de vie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighter_a6b014d7c312371b6126fcf23a8b7d965}\label{classFighter_a6b014d7c312371b6126fcf23a8b7d965}} 
+\index{Fighter@{Fighter}!gethitbox@{gethitbox}}
+\index{gethitbox@{gethitbox}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{gethitbox()}{gethitbox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHitbox}{Hitbox}} Fighter\+::gethitbox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la hitbox d\textquotesingle{}de défense du fighter. 
+
+\mbox{\Hypertarget{classFighter_a827c63fc7d5e41cb786d752099541b43}\label{classFighter_a827c63fc7d5e41cb786d752099541b43}} 
+\index{Fighter@{Fighter}!getPositionX@{getPositionX}}
+\index{getPositionX@{getPositionX}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{getPositionX()}{getPositionX()}}
+{\footnotesize\ttfamily int Fighter\+::get\+PositionX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie l\textquotesingle{}abscisse de la position. 
+
+\mbox{\Hypertarget{classFighter_a8aa76cd5dbb798b6cb32b45cc52435bd}\label{classFighter_a8aa76cd5dbb798b6cb32b45cc52435bd}} 
+\index{Fighter@{Fighter}!getPositionY@{getPositionY}}
+\index{getPositionY@{getPositionY}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{getPositionY()}{getPositionY()}}
+{\footnotesize\ttfamily int Fighter\+::get\+PositionY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie l\textquotesingle{}ordonnée de la position. 
+
+\mbox{\Hypertarget{classFighter_a9a4c68746f34d60589c8d1e8d444c3a4}\label{classFighter_a9a4c68746f34d60589c8d1e8d444c3a4}} 
+\index{Fighter@{Fighter}!isColliding@{isColliding}}
+\index{isColliding@{isColliding}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{isColliding()}{isColliding()}}
+{\footnotesize\ttfamily bool Fighter\+::is\+Colliding (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFighter}{Fighter}} \&}]{Player2 }\end{DoxyParamCaption})}
+
+
+
+Renvoie un booléen si un fighter est en collision avec un autre fighter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighter_a51fc8b36261deec0f4788e6b4e642ad7}\label{classFighter_a51fc8b36261deec0f4788e6b4e642ad7}} 
+\index{Fighter@{Fighter}!jump@{jump}}
+\index{jump@{jump}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Fighter\+::jump (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classField}{Field}} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Action de saut du fighter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighter_a6ca3f964dd3b5093b4c5c62e161504e6}\label{classFighter_a6ca3f964dd3b5093b4c5c62e161504e6}} 
+\index{Fighter@{Fighter}!kick@{kick}}
+\index{kick@{kick}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{kick()}{kick()}}
+{\footnotesize\ttfamily void Fighter\+::kick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFighter}{Fighter}} \&}]{P2 }\end{DoxyParamCaption})}
+
+
+
+Renvoie vraie si le fighter fait l\textquotesingle{}action de kick. 
+
+\mbox{\Hypertarget{classFighter_a85c75a7a7d7cefc9db99bed062b6d604}\label{classFighter_a85c75a7a7d7cefc9db99bed062b6d604}} 
+\index{Fighter@{Fighter}!left@{left}}
+\index{left@{left}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily void Fighter\+::left (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classField}{Field}} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Déplacement du fighter vers la gauche. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighter_a443d1319dea281903bde137ac5884cf3}\label{classFighter_a443d1319dea281903bde137ac5884cf3}} 
+\index{Fighter@{Fighter}!punch@{punch}}
+\index{punch@{punch}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{punch()}{punch()}}
+{\footnotesize\ttfamily void Fighter\+::punch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFighter}{Fighter}} \&}]{P2 }\end{DoxyParamCaption})}
+
+
+
+Renvoie vraie si le fighter fait l\textquotesingle{}action de punch. 
+
+\mbox{\Hypertarget{classFighter_a2e5a72b700b43d2a7b5c211a1335ed81}\label{classFighter_a2e5a72b700b43d2a7b5c211a1335ed81}} 
+\index{Fighter@{Fighter}!RegressionTest@{RegressionTest}}
+\index{RegressionTest@{RegressionTest}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{RegressionTest()}{RegressionTest()}}
+{\footnotesize\ttfamily void Fighter\+::\+Regression\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classFighter_a2c61e34663a3cae7f57f80ad75e8dc49}\label{classFighter_a2c61e34663a3cae7f57f80ad75e8dc49}} 
+\index{Fighter@{Fighter}!right@{right}}
+\index{right@{right}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily void Fighter\+::right (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classField}{Field}} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Déplacement du fighter vers la droite. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighter_aa306b7d2a36bb70922045a59600dcbe8}\label{classFighter_aa306b7d2a36bb70922045a59600dcbe8}} 
+\index{Fighter@{Fighter}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
+{\footnotesize\ttfamily void Fighter\+::set\+Health (\begin{DoxyParamCaption}\item[{const int}]{hp }\end{DoxyParamCaption})}
+
+
+
+Defini les points de vie du fighter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em hp} & \+: points de vie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighter_a6bd6958fc90cf5395f2153425fcc5d03}\label{classFighter_a6bd6958fc90cf5395f2153425fcc5d03}} 
+\index{Fighter@{Fighter}!sethitbox@{sethitbox}}
+\index{sethitbox@{sethitbox}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{sethitbox()}{sethitbox()}}
+{\footnotesize\ttfamily void Fighter\+::sethitbox (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+
+
+Defini la hitbox de défense du fighter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em X} & \+: abscisse de la position de la hitbox \\
+\hline
+{\em Y} & \+: ordonnée de la position de la hitbox \\
+\hline
+{\em width} & \+: largeur de la hitbox \\
+\hline
+{\em height} & \+: longueur de la hitbox \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighter_a5d9137b0025499c791fdc6e949456b4f}\label{classFighter_a5d9137b0025499c791fdc6e949456b4f}} 
+\index{Fighter@{Fighter}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Fighter\+::set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Définit la position d\textquotesingle{}un fighter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & \+: abscisse \\
+\hline
+{\em y} & \+: ordonnée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighter_abae6df5e74e29ff7cfa5371fd85c2144}\label{classFighter_abae6df5e74e29ff7cfa5371fd85c2144}} 
+\index{Fighter@{Fighter}!start@{start}}
+\index{start@{start}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Fighter\+::start (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classField}{Field}} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Action de début du fighter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classFighter_adc6af07e997ddc575b1132ee2af92cdb}\label{classFighter_adc6af07e997ddc575b1132ee2af92cdb}} 
+\index{Fighter@{Fighter}!PlayerState@{PlayerState}}
+\index{PlayerState@{PlayerState}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{PlayerState}{PlayerState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCharacterState}{Character\+State}} Fighter\+::\+Player\+State}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Fighter_8h}{Fighter.\+h}}\item 
+src/core/\mbox{\hyperlink{Fighter_8cpp}{Fighter.\+cpp}}\end{DoxyCompactItemize}

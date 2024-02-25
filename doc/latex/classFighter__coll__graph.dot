@@ -1,0 +1,9 @@
+digraph "Fighter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Fighter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="La classe Fighter est définie par sa position 2D (x,y), son nombre de point de vie et ses 2 Hitbox."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PlayerState" ];
+  Node2 [label="CharacterState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCharacterState.html",tooltip="La classe CharacterState est définie par une énumeration de différents états que le fighter peut avoi..."];
+}

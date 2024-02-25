@@ -1,0 +1,9 @@
+digraph "SDLSimple"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="SDLSimple",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="La classe SDL pour gérer le jeu avec un affichage SDL."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tabRise\ntabYukiko" ];
+  Node2 [label="AnimationData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnimationData.html",tooltip="La classe AnimationData gère les informations des animations."];
+}

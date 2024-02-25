@@ -1,0 +1,327 @@
+\hypertarget{classCharacterState}{}\doxysection{Référence de la classe Character\+State}
+\label{classCharacterState}\index{CharacterState@{CharacterState}}
+
+
+La classe \mbox{\hyperlink{classCharacterState}{Character\+State}} est définie par une énumeration de différents états que le fighter peut avoir.  
+
+
+
+
+{\ttfamily \#include $<$Character\+State.\+h$>$}
+
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89e}{States}} \{ \newline
+\mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eabb5eb24d28d319636f8f6bd7e4a21d17}{IDLE}}
+, \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea725209d469920c5ac5a874190d3b9f03}{WALK}}
+, \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ead139d98642eb56af61d4f9b3b1a6eb77}{WALKBACK}}
+, \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea315ae81caf88ec7099043059fbf608f9}{CROUCH}}
+, \newline
+\mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eaba28625906c416edde3b841c2cb48428}{JUMP}}
+, \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eaca4263cb1d8743a7bcf5312d2a7e3821}{PUNCH}}
+, \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eac65cedeb9c886117c713852a6df1e992}{KICK}}
+, \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea16ff478f7977de5ce0ee1151fac8b130}{HIT}}
+, \newline
+\mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eac875acafd8f8cfdabbc3dcd94fee181a}{START}}
+, \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea8d60cd3a1dda44dc0141379631c8d532}{LOSER}}
+, \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eaef9141579ae34b083e4c72e7c4ac07b0}{WINNER}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCharacterState_abe9bcd871b173ad3312d71e3165b1bfb}{Character\+State}} ()
+\begin{DoxyCompactList}\small\item\em Construit un objet \mbox{\hyperlink{classCharacterState}{Character\+State}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCharacterState_a690e946cdc5647403c79fbcc543aafc9}{$\sim$\+Character\+State}} ()
+\begin{DoxyCompactList}\small\item\em Détruit un objet \mbox{\hyperlink{classCharacterState}{Character\+State}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCharacterState_ade65d5b384e5b6770a012a71bb9b48cc}{Get\+State\+String}} (\mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89e}{States}} \mbox{\hyperlink{classCharacterState_a437f66b232c9e1faf155f63b1fae3f69}{state}})
+\begin{DoxyCompactList}\small\item\em récupère l\textquotesingle{}état du fighter et retourne son string associé \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCharacterState_adf00d83bbab593d010278e63316c6108}{Get\+Current\+State\+String}} ()
+\begin{DoxyCompactList}\small\item\em recupère et renvoie un string représentant l\textquotesingle{}état actuel d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} Cette fonction permet de réduire les risques d\textquotesingle{}erreurs lors de la conversions des énumérations d\textquotesingle{}état en string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_a40f3fad74fe2fd1fc98e5dd95e7dd08b}{Idle}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+IDLE\char`\"{} vérifie si état actuel est déjà \char`\"{}\+IDLE\char`\"{} en comparant avec valeur de l\textquotesingle{}énumération \char`\"{}\+States\+::\+IDLE\char`\"{} si c\textquotesingle{}est le cas, fonction se termine. Sinon, fonction modifie énumération avec opérateur d\textquotesingle{}affectation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_a82e5659f8168331be8ead1106cbd6348}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+START\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_a6a781079fd7d5d97ac2c8a4ab421eece}{Walk}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+WALK\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_a0cc581096a8cfbbed2725561f2b5a3d4}{Walkback}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+WALKBACK\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_ad44961649c9e62bbdaf468bf5c69e9fa}{Jump}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+JUMP\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_ab8e6863679ce89ccddaefe33e05036a9}{Crouch}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+CROUCH\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_a5155e584081425a03fb430ee947a7fc2}{Kick}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+KICK\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_a05be562dd62be5258e7feb269e7eec02}{Punch}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+PUNCH\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_ade2a532c373452872b987caa120d8ff0}{Hit}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+HIT\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_a2df3161cbebd70170a7adffb1f33d5a4}{Loser}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+LOST\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_ab66242a6c4a1e5903d57d4c3214c9d3f}{Winner}} ()
+\begin{DoxyCompactList}\small\item\em Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+WON\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCharacterState_a7555e4dcde6053663f6f3cfe6a57fccd}{Regression\+Test}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89e}{States}} \mbox{\hyperlink{classCharacterState_a437f66b232c9e1faf155f63b1fae3f69}{state}} = States\+::\+START
+\item 
+bool \mbox{\hyperlink{classCharacterState_afdd39e20284fccad82bd398ad575d87e}{Reset\+Frames}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+La classe \mbox{\hyperlink{classCharacterState}{Character\+State}} est définie par une énumeration de différents états que le fighter peut avoir. 
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89e}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89e}} 
+\index{CharacterState@{CharacterState}!States@{States}}
+\index{States@{States}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{States}{States}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89e}{Character\+State\+::\+States}}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IDLE@{IDLE}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!IDLE@{IDLE}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eabb5eb24d28d319636f8f6bd7e4a21d17}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eabb5eb24d28d319636f8f6bd7e4a21d17}} 
+IDLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WALK@{WALK}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!WALK@{WALK}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea725209d469920c5ac5a874190d3b9f03}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea725209d469920c5ac5a874190d3b9f03}} 
+WALK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WALKBACK@{WALKBACK}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!WALKBACK@{WALKBACK}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ead139d98642eb56af61d4f9b3b1a6eb77}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ead139d98642eb56af61d4f9b3b1a6eb77}} 
+WALKBACK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CROUCH@{CROUCH}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!CROUCH@{CROUCH}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea315ae81caf88ec7099043059fbf608f9}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea315ae81caf88ec7099043059fbf608f9}} 
+CROUCH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JUMP@{JUMP}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!JUMP@{JUMP}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eaba28625906c416edde3b841c2cb48428}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eaba28625906c416edde3b841c2cb48428}} 
+JUMP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PUNCH@{PUNCH}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!PUNCH@{PUNCH}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eaca4263cb1d8743a7bcf5312d2a7e3821}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eaca4263cb1d8743a7bcf5312d2a7e3821}} 
+PUNCH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KICK@{KICK}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!KICK@{KICK}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eac65cedeb9c886117c713852a6df1e992}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eac65cedeb9c886117c713852a6df1e992}} 
+KICK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HIT@{HIT}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!HIT@{HIT}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea16ff478f7977de5ce0ee1151fac8b130}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea16ff478f7977de5ce0ee1151fac8b130}} 
+HIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{START@{START}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!START@{START}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eac875acafd8f8cfdabbc3dcd94fee181a}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eac875acafd8f8cfdabbc3dcd94fee181a}} 
+START&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOSER@{LOSER}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!LOSER@{LOSER}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea8d60cd3a1dda44dc0141379631c8d532}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89ea8d60cd3a1dda44dc0141379631c8d532}} 
+LOSER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WINNER@{WINNER}!CharacterState@{CharacterState}}\index{CharacterState@{CharacterState}!WINNER@{WINNER}}}\mbox{\Hypertarget{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eaef9141579ae34b083e4c72e7c4ac07b0}\label{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89eaef9141579ae34b083e4c72e7c4ac07b0}} 
+WINNER&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classCharacterState_abe9bcd871b173ad3312d71e3165b1bfb}\label{classCharacterState_abe9bcd871b173ad3312d71e3165b1bfb}} 
+\index{CharacterState@{CharacterState}!CharacterState@{CharacterState}}
+\index{CharacterState@{CharacterState}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{CharacterState()}{CharacterState()}}
+{\footnotesize\ttfamily Character\+State\+::\+Character\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construit un objet \mbox{\hyperlink{classCharacterState}{Character\+State}}. 
+
+\mbox{\Hypertarget{classCharacterState_a690e946cdc5647403c79fbcc543aafc9}\label{classCharacterState_a690e946cdc5647403c79fbcc543aafc9}} 
+\index{CharacterState@{CharacterState}!````~CharacterState@{$\sim$CharacterState}}
+\index{````~CharacterState@{$\sim$CharacterState}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{$\sim$CharacterState()}{~CharacterState()}}
+{\footnotesize\ttfamily Character\+State\+::$\sim$\+Character\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Détruit un objet \mbox{\hyperlink{classCharacterState}{Character\+State}}. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classCharacterState_ab8e6863679ce89ccddaefe33e05036a9}\label{classCharacterState_ab8e6863679ce89ccddaefe33e05036a9}} 
+\index{CharacterState@{CharacterState}!Crouch@{Crouch}}
+\index{Crouch@{Crouch}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Crouch()}{Crouch()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Crouch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+CROUCH\char`\"{}. 
+
+\mbox{\Hypertarget{classCharacterState_adf00d83bbab593d010278e63316c6108}\label{classCharacterState_adf00d83bbab593d010278e63316c6108}} 
+\index{CharacterState@{CharacterState}!GetCurrentStateString@{GetCurrentStateString}}
+\index{GetCurrentStateString@{GetCurrentStateString}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{GetCurrentStateString()}{GetCurrentStateString()}}
+{\footnotesize\ttfamily string Character\+State\+::\+Get\+Current\+State\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+recupère et renvoie un string représentant l\textquotesingle{}état actuel d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} Cette fonction permet de réduire les risques d\textquotesingle{}erreurs lors de la conversions des énumérations d\textquotesingle{}état en string. 
+
+\begin{DoxyReturn}{Renvoie}
+string \+: état du fighter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCharacterState_ade65d5b384e5b6770a012a71bb9b48cc}\label{classCharacterState_ade65d5b384e5b6770a012a71bb9b48cc}} 
+\index{CharacterState@{CharacterState}!GetStateString@{GetStateString}}
+\index{GetStateString@{GetStateString}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{GetStateString()}{GetStateString()}}
+{\footnotesize\ttfamily string Character\+State\+::\+Get\+State\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89e}{States}}}]{state }\end{DoxyParamCaption})}
+
+
+
+récupère l\textquotesingle{}état du fighter et retourne son string associé 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em state} & \+: un argument de l\textquotesingle{}énumération de type \char`\"{}\+States\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+string \+: état du fighter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCharacterState_ade2a532c373452872b987caa120d8ff0}\label{classCharacterState_ade2a532c373452872b987caa120d8ff0}} 
+\index{CharacterState@{CharacterState}!Hit@{Hit}}
+\index{Hit@{Hit}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Hit()}{Hit()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+HIT\char`\"{}. 
+
+\mbox{\Hypertarget{classCharacterState_a40f3fad74fe2fd1fc98e5dd95e7dd08b}\label{classCharacterState_a40f3fad74fe2fd1fc98e5dd95e7dd08b}} 
+\index{CharacterState@{CharacterState}!Idle@{Idle}}
+\index{Idle@{Idle}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Idle()}{Idle()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Idle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+IDLE\char`\"{} vérifie si état actuel est déjà \char`\"{}\+IDLE\char`\"{} en comparant avec valeur de l\textquotesingle{}énumération \char`\"{}\+States\+::\+IDLE\char`\"{} si c\textquotesingle{}est le cas, fonction se termine. Sinon, fonction modifie énumération avec opérateur d\textquotesingle{}affectation. 
+
+
+\begin{DoxyItemize}
+\item réinitialisation des Frames pour effectuer cet état ou un autre de nouveau. 
+\end{DoxyItemize}\mbox{\Hypertarget{classCharacterState_ad44961649c9e62bbdaf468bf5c69e9fa}\label{classCharacterState_ad44961649c9e62bbdaf468bf5c69e9fa}} 
+\index{CharacterState@{CharacterState}!Jump@{Jump}}
+\index{Jump@{Jump}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+JUMP\char`\"{}. 
+
+\mbox{\Hypertarget{classCharacterState_a5155e584081425a03fb430ee947a7fc2}\label{classCharacterState_a5155e584081425a03fb430ee947a7fc2}} 
+\index{CharacterState@{CharacterState}!Kick@{Kick}}
+\index{Kick@{Kick}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Kick()}{Kick()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Kick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+KICK\char`\"{}. 
+
+\mbox{\Hypertarget{classCharacterState_a2df3161cbebd70170a7adffb1f33d5a4}\label{classCharacterState_a2df3161cbebd70170a7adffb1f33d5a4}} 
+\index{CharacterState@{CharacterState}!Loser@{Loser}}
+\index{Loser@{Loser}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Loser()}{Loser()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Loser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+LOST\char`\"{}. 
+
+\mbox{\Hypertarget{classCharacterState_a05be562dd62be5258e7feb269e7eec02}\label{classCharacterState_a05be562dd62be5258e7feb269e7eec02}} 
+\index{CharacterState@{CharacterState}!Punch@{Punch}}
+\index{Punch@{Punch}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Punch()}{Punch()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Punch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+PUNCH\char`\"{}. 
+
+\mbox{\Hypertarget{classCharacterState_a7555e4dcde6053663f6f3cfe6a57fccd}\label{classCharacterState_a7555e4dcde6053663f6f3cfe6a57fccd}} 
+\index{CharacterState@{CharacterState}!RegressionTest@{RegressionTest}}
+\index{RegressionTest@{RegressionTest}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{RegressionTest()}{RegressionTest()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Regression\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCharacterState_a82e5659f8168331be8ead1106cbd6348}\label{classCharacterState_a82e5659f8168331be8ead1106cbd6348}} 
+\index{CharacterState@{CharacterState}!Start@{Start}}
+\index{Start@{Start}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+START\char`\"{}. 
+
+///////////////////////////////////////////////// \mbox{\Hypertarget{classCharacterState_a6a781079fd7d5d97ac2c8a4ab421eece}\label{classCharacterState_a6a781079fd7d5d97ac2c8a4ab421eece}} 
+\index{CharacterState@{CharacterState}!Walk@{Walk}}
+\index{Walk@{Walk}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Walk()}{Walk()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Walk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+WALK\char`\"{}. 
+
+\mbox{\Hypertarget{classCharacterState_a0cc581096a8cfbbed2725561f2b5a3d4}\label{classCharacterState_a0cc581096a8cfbbed2725561f2b5a3d4}} 
+\index{CharacterState@{CharacterState}!Walkback@{Walkback}}
+\index{Walkback@{Walkback}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Walkback()}{Walkback()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Walkback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+WALKBACK\char`\"{}. 
+
+\mbox{\Hypertarget{classCharacterState_ab66242a6c4a1e5903d57d4c3214c9d3f}\label{classCharacterState_ab66242a6c4a1e5903d57d4c3214c9d3f}} 
+\index{CharacterState@{CharacterState}!Winner@{Winner}}
+\index{Winner@{Winner}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{Winner()}{Winner()}}
+{\footnotesize\ttfamily void Character\+State\+::\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met l\textquotesingle{}état d\textquotesingle{}une instance de la classe \char`\"{}\+Character\+State\char`\"{} à \char`\"{}\+WON\char`\"{}. 
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classCharacterState_afdd39e20284fccad82bd398ad575d87e}\label{classCharacterState_afdd39e20284fccad82bd398ad575d87e}} 
+\index{CharacterState@{CharacterState}!ResetFrames@{ResetFrames}}
+\index{ResetFrames@{ResetFrames}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{ResetFrames}{ResetFrames}}
+{\footnotesize\ttfamily bool Character\+State\+::\+Reset\+Frames = false}
+
+\mbox{\Hypertarget{classCharacterState_a437f66b232c9e1faf155f63b1fae3f69}\label{classCharacterState_a437f66b232c9e1faf155f63b1fae3f69}} 
+\index{CharacterState@{CharacterState}!state@{state}}
+\index{state@{state}!CharacterState@{CharacterState}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCharacterState_affd8ad6f18dcd7accfe5a79921c8e89e}{States}} Character\+State\+::state = States\+::\+START}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{CharacterState_8h}{Character\+State.\+h}}\item 
+src/core/\mbox{\hyperlink{CharacterState_8cpp}{Character\+State.\+cpp}}\end{DoxyCompactItemize}

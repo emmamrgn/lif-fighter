@@ -1,0 +1,239 @@
+\hypertarget{classSDLSimple}{}\doxysection{Référence de la classe SDLSimple}
+\label{classSDLSimple}\index{SDLSimple@{SDLSimple}}
+
+
+La classe SDL pour gérer le jeu avec un affichage SDL.  
+
+
+
+
+{\ttfamily \#include $<$sdl\+SF.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSDLSimple_a86fc32beeb1b399f17e31e3676435d15}{SDLSimple}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de \mbox{\hyperlink{classSDLSimple}{SDLSimple}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSDLSimple_a41bcf4dde568370d4326844190f433ea}{$\sim$\+SDLSimple}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de \mbox{\hyperlink{classSDLSimple}{SDLSimple}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSDLSimple_a6046472261ef8668845843489a66194e}{sdl\+Boucle}} ()
+\begin{DoxyCompactList}\small\item\em Boucle principale du jeu avec SDL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSDLSimple_ae4445d8a311904c96f02eb91705e66ff}{sdl\+Aff}} ()
+\begin{DoxyCompactList}\small\item\em Affiche les textures à l\textquotesingle{}écran. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSDLSimple_a2629d26e0adb340c09e22b6dcf21eb46}{create\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Crée le menu principal du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSDLSimple_a079f3713595bb0f9b57b40de0df3b167}{play\+Move\+Sound}} (const char $\ast$sound\+File)
+\begin{DoxyCompactList}\small\item\em Joue un fichier son. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSDLSimple_ab4f06b3d6a4878e1438a0cf21ec28bf2}{hp\+\_\+bar}} ()
+\begin{DoxyCompactList}\small\item\em Affiche la barre d\textquotesingle{}hp des fighters à l\textquotesingle{}écran. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSDLSimple_a98d064552737cc3cd696db059238eaa7}{hitboxes}} ()
+\begin{DoxyCompactList}\small\item\em Met en place les collisions et l\textquotesingle{}impact sur les poins de vie / affiche si besoin les hitboxes des personnages à l\textquotesingle{}écran. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSDLSimple_aa636bb29984cdf7507038d998eda44e9}{endgame}} ()
+\begin{DoxyCompactList}\small\item\em Met en place la fin de partie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classSDLSimple_af9779795b4341302845bf29407c40225}{Animation\+Width}} = \mbox{\hyperlink{classSDLSimple_a46f486308989e69dea1d590c92fa3f76}{tab\+Rise}}\mbox{[}player.\+Player\+State.\+state\mbox{]}.Animation\+Width
+\item 
+int \mbox{\hyperlink{classSDLSimple_aa0adcdeee55ca98d006c1d5951619b5f}{Animation\+Height}} = \mbox{\hyperlink{classSDLSimple_a46f486308989e69dea1d590c92fa3f76}{tab\+Rise}}\mbox{[}player.\+Player\+State.\+state\mbox{]}.Animation\+Height
+\item 
+int \mbox{\hyperlink{classSDLSimple_a44fe3ef11d8e3675aa0c1e0aa38809e7}{Nb\+Frames}} = \mbox{\hyperlink{classSDLSimple_a46f486308989e69dea1d590c92fa3f76}{tab\+Rise}}\mbox{[}player.\+Player\+State.\+state\mbox{]}.Nb\+Frames
+\item 
+int \mbox{\hyperlink{classSDLSimple_ae7b975531d09a7b25c8c20fb71baf1d9}{Animation\+Width2}} = \mbox{\hyperlink{classSDLSimple_a5f7d17f144e56919fae97f9e15eb294b}{tab\+Yukiko}}\mbox{[}player2.\+Player\+State.\+state\mbox{]}.\mbox{\hyperlink{classSDLSimple_af9779795b4341302845bf29407c40225}{Animation\+Width}}
+\item 
+int \mbox{\hyperlink{classSDLSimple_a1a878879178d837e07192086958ef8ae}{Animation\+Height2}} = \mbox{\hyperlink{classSDLSimple_a5f7d17f144e56919fae97f9e15eb294b}{tab\+Yukiko}}\mbox{[}player2.\+Player\+State.\+state\mbox{]}.\mbox{\hyperlink{classSDLSimple_aa0adcdeee55ca98d006c1d5951619b5f}{Animation\+Height}}
+\item 
+int \mbox{\hyperlink{classSDLSimple_a8094896e9de6c9bda124d183afcaf54c}{Nb\+Frames2}} = \mbox{\hyperlink{classSDLSimple_a5f7d17f144e56919fae97f9e15eb294b}{tab\+Yukiko}}\mbox{[}player2.\+Player\+State.\+state\mbox{]}.\mbox{\hyperlink{classSDLSimple_a44fe3ef11d8e3675aa0c1e0aa38809e7}{Nb\+Frames}}
+\item 
+\mbox{\hyperlink{classAnimationData}{Animation\+Data}} \mbox{\hyperlink{classSDLSimple_a46f486308989e69dea1d590c92fa3f76}{tab\+Rise}} \mbox{[}11\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tableau de données d\textquotesingle{}animation pour Rise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAnimationData}{Animation\+Data}} \mbox{\hyperlink{classSDLSimple_a5f7d17f144e56919fae97f9e15eb294b}{tab\+Yukiko}} \mbox{[}11\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tableau de données d\textquotesingle{}animation pour Yukiko. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classSDLSimple_ab1891ec34a6dad8be4651bf58c9c1124}{frame\+Number}}
+\item 
+static int \mbox{\hyperlink{classSDLSimple_ae3bb201b2604f52aed651ffb8ca1e71e}{frame\+Number2}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+La classe SDL pour gérer le jeu avec un affichage SDL. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classSDLSimple_a86fc32beeb1b399f17e31e3676435d15}\label{classSDLSimple_a86fc32beeb1b399f17e31e3676435d15}} 
+\index{SDLSimple@{SDLSimple}!SDLSimple@{SDLSimple}}
+\index{SDLSimple@{SDLSimple}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{SDLSimple()}{SDLSimple()}}
+{\footnotesize\ttfamily SDLSimple\+::\+SDLSimple (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur de \mbox{\hyperlink{classSDLSimple}{SDLSimple}}. 
+
+\mbox{\Hypertarget{classSDLSimple_a41bcf4dde568370d4326844190f433ea}\label{classSDLSimple_a41bcf4dde568370d4326844190f433ea}} 
+\index{SDLSimple@{SDLSimple}!````~SDLSimple@{$\sim$SDLSimple}}
+\index{````~SDLSimple@{$\sim$SDLSimple}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{$\sim$SDLSimple()}{~SDLSimple()}}
+{\footnotesize\ttfamily SDLSimple\+::$\sim$\+SDLSimple (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de \mbox{\hyperlink{classSDLSimple}{SDLSimple}}. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classSDLSimple_a2629d26e0adb340c09e22b6dcf21eb46}\label{classSDLSimple_a2629d26e0adb340c09e22b6dcf21eb46}} 
+\index{SDLSimple@{SDLSimple}!createMenu@{createMenu}}
+\index{createMenu@{createMenu}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{createMenu()}{createMenu()}}
+{\footnotesize\ttfamily void SDLSimple\+::create\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crée le menu principal du jeu. 
+
+\mbox{\Hypertarget{classSDLSimple_aa636bb29984cdf7507038d998eda44e9}\label{classSDLSimple_aa636bb29984cdf7507038d998eda44e9}} 
+\index{SDLSimple@{SDLSimple}!endgame@{endgame}}
+\index{endgame@{endgame}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{endgame()}{endgame()}}
+{\footnotesize\ttfamily void SDLSimple\+::endgame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met en place la fin de partie. 
+
+\mbox{\Hypertarget{classSDLSimple_a98d064552737cc3cd696db059238eaa7}\label{classSDLSimple_a98d064552737cc3cd696db059238eaa7}} 
+\index{SDLSimple@{SDLSimple}!hitboxes@{hitboxes}}
+\index{hitboxes@{hitboxes}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{hitboxes()}{hitboxes()}}
+{\footnotesize\ttfamily void SDLSimple\+::hitboxes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met en place les collisions et l\textquotesingle{}impact sur les poins de vie / affiche si besoin les hitboxes des personnages à l\textquotesingle{}écran. 
+
+\mbox{\Hypertarget{classSDLSimple_ab4f06b3d6a4878e1438a0cf21ec28bf2}\label{classSDLSimple_ab4f06b3d6a4878e1438a0cf21ec28bf2}} 
+\index{SDLSimple@{SDLSimple}!hp\_bar@{hp\_bar}}
+\index{hp\_bar@{hp\_bar}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{hp\_bar()}{hp\_bar()}}
+{\footnotesize\ttfamily void SDLSimple\+::hp\+\_\+bar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Affiche la barre d\textquotesingle{}hp des fighters à l\textquotesingle{}écran. 
+
+\mbox{\Hypertarget{classSDLSimple_a079f3713595bb0f9b57b40de0df3b167}\label{classSDLSimple_a079f3713595bb0f9b57b40de0df3b167}} 
+\index{SDLSimple@{SDLSimple}!playMoveSound@{playMoveSound}}
+\index{playMoveSound@{playMoveSound}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{playMoveSound()}{playMoveSound()}}
+{\footnotesize\ttfamily void SDLSimple\+::play\+Move\+Sound (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sound\+File }\end{DoxyParamCaption})}
+
+
+
+Joue un fichier son. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sound\+File} & Nom du fichier son à jouer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSDLSimple_ae4445d8a311904c96f02eb91705e66ff}\label{classSDLSimple_ae4445d8a311904c96f02eb91705e66ff}} 
+\index{SDLSimple@{SDLSimple}!sdlAff@{sdlAff}}
+\index{sdlAff@{sdlAff}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{sdlAff()}{sdlAff()}}
+{\footnotesize\ttfamily void SDLSimple\+::sdl\+Aff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Affiche les textures à l\textquotesingle{}écran. 
+
+\mbox{\Hypertarget{classSDLSimple_a6046472261ef8668845843489a66194e}\label{classSDLSimple_a6046472261ef8668845843489a66194e}} 
+\index{SDLSimple@{SDLSimple}!sdlBoucle@{sdlBoucle}}
+\index{sdlBoucle@{sdlBoucle}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{sdlBoucle()}{sdlBoucle()}}
+{\footnotesize\ttfamily void SDLSimple\+::sdl\+Boucle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Boucle principale du jeu avec SDL. 
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classSDLSimple_aa0adcdeee55ca98d006c1d5951619b5f}\label{classSDLSimple_aa0adcdeee55ca98d006c1d5951619b5f}} 
+\index{SDLSimple@{SDLSimple}!AnimationHeight@{AnimationHeight}}
+\index{AnimationHeight@{AnimationHeight}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{AnimationHeight}{AnimationHeight}}
+{\footnotesize\ttfamily int SDLSimple\+::\+Animation\+Height = \mbox{\hyperlink{classSDLSimple_a46f486308989e69dea1d590c92fa3f76}{tab\+Rise}}\mbox{[}player.\+Player\+State.\+state\mbox{]}.Animation\+Height}
+
+Hauteur de l\textquotesingle{}animation en cours du joueur 1 \mbox{\Hypertarget{classSDLSimple_a1a878879178d837e07192086958ef8ae}\label{classSDLSimple_a1a878879178d837e07192086958ef8ae}} 
+\index{SDLSimple@{SDLSimple}!AnimationHeight2@{AnimationHeight2}}
+\index{AnimationHeight2@{AnimationHeight2}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{AnimationHeight2}{AnimationHeight2}}
+{\footnotesize\ttfamily int SDLSimple\+::\+Animation\+Height2 = \mbox{\hyperlink{classSDLSimple_a5f7d17f144e56919fae97f9e15eb294b}{tab\+Yukiko}}\mbox{[}player2.\+Player\+State.\+state\mbox{]}.\mbox{\hyperlink{classSDLSimple_aa0adcdeee55ca98d006c1d5951619b5f}{Animation\+Height}}}
+
+Hauteur de l\textquotesingle{}animation en cours du joueur 2 \mbox{\Hypertarget{classSDLSimple_af9779795b4341302845bf29407c40225}\label{classSDLSimple_af9779795b4341302845bf29407c40225}} 
+\index{SDLSimple@{SDLSimple}!AnimationWidth@{AnimationWidth}}
+\index{AnimationWidth@{AnimationWidth}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{AnimationWidth}{AnimationWidth}}
+{\footnotesize\ttfamily int SDLSimple\+::\+Animation\+Width = \mbox{\hyperlink{classSDLSimple_a46f486308989e69dea1d590c92fa3f76}{tab\+Rise}}\mbox{[}player.\+Player\+State.\+state\mbox{]}.Animation\+Width}
+
+Largeur de l\textquotesingle{}animation en cours du joueur 1 \mbox{\Hypertarget{classSDLSimple_ae7b975531d09a7b25c8c20fb71baf1d9}\label{classSDLSimple_ae7b975531d09a7b25c8c20fb71baf1d9}} 
+\index{SDLSimple@{SDLSimple}!AnimationWidth2@{AnimationWidth2}}
+\index{AnimationWidth2@{AnimationWidth2}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{AnimationWidth2}{AnimationWidth2}}
+{\footnotesize\ttfamily int SDLSimple\+::\+Animation\+Width2 = \mbox{\hyperlink{classSDLSimple_a5f7d17f144e56919fae97f9e15eb294b}{tab\+Yukiko}}\mbox{[}player2.\+Player\+State.\+state\mbox{]}.\mbox{\hyperlink{classSDLSimple_af9779795b4341302845bf29407c40225}{Animation\+Width}}}
+
+Largeur de l\textquotesingle{}animation en cours du joueur 2 \mbox{\Hypertarget{classSDLSimple_ab1891ec34a6dad8be4651bf58c9c1124}\label{classSDLSimple_ab1891ec34a6dad8be4651bf58c9c1124}} 
+\index{SDLSimple@{SDLSimple}!frameNumber@{frameNumber}}
+\index{frameNumber@{frameNumber}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{frameNumber}{frameNumber}}
+{\footnotesize\ttfamily int SDLSimple\+::frame\+Number\hspace{0.3cm}{\ttfamily [static]}}
+
+Numéro du frame actuel de l\textquotesingle{}animation du joueur 1 \mbox{\Hypertarget{classSDLSimple_ae3bb201b2604f52aed651ffb8ca1e71e}\label{classSDLSimple_ae3bb201b2604f52aed651ffb8ca1e71e}} 
+\index{SDLSimple@{SDLSimple}!frameNumber2@{frameNumber2}}
+\index{frameNumber2@{frameNumber2}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{frameNumber2}{frameNumber2}}
+{\footnotesize\ttfamily int SDLSimple\+::frame\+Number2\hspace{0.3cm}{\ttfamily [static]}}
+
+Numéro du frame actuel de l\textquotesingle{}animation du joueur 2 \mbox{\Hypertarget{classSDLSimple_a44fe3ef11d8e3675aa0c1e0aa38809e7}\label{classSDLSimple_a44fe3ef11d8e3675aa0c1e0aa38809e7}} 
+\index{SDLSimple@{SDLSimple}!NbFrames@{NbFrames}}
+\index{NbFrames@{NbFrames}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{NbFrames}{NbFrames}}
+{\footnotesize\ttfamily int SDLSimple\+::\+Nb\+Frames = \mbox{\hyperlink{classSDLSimple_a46f486308989e69dea1d590c92fa3f76}{tab\+Rise}}\mbox{[}player.\+Player\+State.\+state\mbox{]}.Nb\+Frames}
+
+Nombre de frames de l\textquotesingle{}animation en cours du joueur 1 \mbox{\Hypertarget{classSDLSimple_a8094896e9de6c9bda124d183afcaf54c}\label{classSDLSimple_a8094896e9de6c9bda124d183afcaf54c}} 
+\index{SDLSimple@{SDLSimple}!NbFrames2@{NbFrames2}}
+\index{NbFrames2@{NbFrames2}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{NbFrames2}{NbFrames2}}
+{\footnotesize\ttfamily int SDLSimple\+::\+Nb\+Frames2 = \mbox{\hyperlink{classSDLSimple_a5f7d17f144e56919fae97f9e15eb294b}{tab\+Yukiko}}\mbox{[}player2.\+Player\+State.\+state\mbox{]}.\mbox{\hyperlink{classSDLSimple_a44fe3ef11d8e3675aa0c1e0aa38809e7}{Nb\+Frames}}}
+
+Nombre de frames de l\textquotesingle{}animation en cours du joueur 2 \mbox{\Hypertarget{classSDLSimple_a46f486308989e69dea1d590c92fa3f76}\label{classSDLSimple_a46f486308989e69dea1d590c92fa3f76}} 
+\index{SDLSimple@{SDLSimple}!tabRise@{tabRise}}
+\index{tabRise@{tabRise}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{tabRise}{tabRise}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnimationData}{Animation\+Data}} SDLSimple\+::tab\+Rise\mbox{[}11\mbox{]}}
+
+
+
+Tableau de données d\textquotesingle{}animation pour Rise. 
+
+\mbox{\Hypertarget{classSDLSimple_a5f7d17f144e56919fae97f9e15eb294b}\label{classSDLSimple_a5f7d17f144e56919fae97f9e15eb294b}} 
+\index{SDLSimple@{SDLSimple}!tabYukiko@{tabYukiko}}
+\index{tabYukiko@{tabYukiko}!SDLSimple@{SDLSimple}}
+\doxysubsubsection{\texorpdfstring{tabYukiko}{tabYukiko}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnimationData}{Animation\+Data}} SDLSimple\+::tab\+Yukiko\mbox{[}11\mbox{]}}
+
+
+
+Tableau de données d\textquotesingle{}animation pour Yukiko. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/\+SDL/\mbox{\hyperlink{sdlSF_8h}{sdl\+SF.\+h}}\item 
+src/\+SDL/\mbox{\hyperlink{sdlSF_8cpp}{sdl\+SF.\+cpp}}\end{DoxyCompactItemize}

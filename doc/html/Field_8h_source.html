@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LIF_FIGHTERS by Sasha&amp;Emma:  Fichier source de src/core/Field.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LIF_FIGHTERS by Sasha&amp;Emma
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Field.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Field_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classField.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classField.html">Field</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classField.html#a3e804c92273d9159f413f227b535c672">Field</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classField.html#a5cce5a8024f31829c4604ee3533827fe">isPositionValid</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classField.html#adcc0599da9c2c3141e19e1d9c166f0ef">getDimX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classField.html#a5ce6120253e2ee32a87f242d47dc60aa">getDimY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="classField.html#a34bcea8a73b985accc88b7d9769eaa7b">getXYasChar</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classField.html#aadcff0851d296738f32d44ceead5a0d8">RegressionTest</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">enum</span> TypeCase</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            SPACE = <span class="charliteral">&#39; &#39;</span>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            WALL = <span class="charliteral">&#39;#&#39;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        };</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">int</span> f_dimx;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">int</span> f_dimy;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        TypeCase field[720][480];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classField.html#a34bcea8a73b985accc88b7d9769eaa7b">   70</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="classField.html#a34bcea8a73b985accc88b7d9769eaa7b">Field::getXYasChar</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    assert(x &gt;= 0);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    assert(y &gt;= 0);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    assert(x &lt; f_dimx);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    assert(y &lt; f_dimy);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">char</span>)(field[x][y]);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} </div>
+<div class="ttc" id="aclassField_html"><div class="ttname"><a href="classField.html">Field</a></div><div class="ttdoc">La classe Field contient ses dimensions et un tab 2D de cases (1 case = 1 char)</div><div class="ttdef"><b>Definition:</b> Field.h:20</div></div>
+<div class="ttc" id="aclassField_html_a34bcea8a73b985accc88b7d9769eaa7b"><div class="ttname"><a href="classField.html#a34bcea8a73b985accc88b7d9769eaa7b">Field::getXYasChar</a></div><div class="ttdeci">unsigned char getXYasChar(const int x, const int y) const</div><div class="ttdoc">Renvoie le type d'objet au coordonnées (x,y)</div><div class="ttdef"><b>Definition:</b> Field.h:70</div></div>
+<div class="ttc" id="aclassField_html_a3e804c92273d9159f413f227b535c672"><div class="ttname"><a href="classField.html#a3e804c92273d9159f413f227b535c672">Field::Field</a></div><div class="ttdeci">Field()</div><div class="ttdoc">Construit un objet Field Le constructeur remplit dimx et dimy et les cases du tableau field avec un t...</div><div class="ttdef"><b>Definition:</b> Field.cpp:19</div></div>
+<div class="ttc" id="aclassField_html_a5cce5a8024f31829c4604ee3533827fe"><div class="ttname"><a href="classField.html#a5cce5a8024f31829c4604ee3533827fe">Field::isPositionValid</a></div><div class="ttdeci">bool isPositionValid(const int x, const int y) const</div><div class="ttdoc">Renvoie vraie si on peut positionner un personnage au coordonnées (x,y), faux sinon.</div><div class="ttdef"><b>Definition:</b> Field.cpp:37</div></div>
+<div class="ttc" id="aclassField_html_a5ce6120253e2ee32a87f242d47dc60aa"><div class="ttname"><a href="classField.html#a5ce6120253e2ee32a87f242d47dc60aa">Field::getDimY</a></div><div class="ttdeci">int getDimY() const</div><div class="ttdoc">Renvoie la hauteur du field.</div><div class="ttdef"><b>Definition:</b> Field.cpp:46</div></div>
+<div class="ttc" id="aclassField_html_aadcff0851d296738f32d44ceead5a0d8"><div class="ttname"><a href="classField.html#aadcff0851d296738f32d44ceead5a0d8">Field::RegressionTest</a></div><div class="ttdeci">void RegressionTest()</div><div class="ttdef"><b>Definition:</b> Field.cpp:51</div></div>
+<div class="ttc" id="aclassField_html_adcc0599da9c2c3141e19e1d9c166f0ef"><div class="ttname"><a href="classField.html#adcc0599da9c2c3141e19e1d9c166f0ef">Field::getDimX</a></div><div class="ttdeci">int getDimX() const</div><div class="ttdoc">Renvoie la largeur du field.</div><div class="ttdef"><b>Definition:</b> Field.cpp:42</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

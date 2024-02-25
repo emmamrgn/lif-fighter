@@ -1,0 +1,79 @@
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+ Un jeu de combat simple en 2D style Street-\/\+Fighter.\hypertarget{index_autotoc_md1}{}\doxysection{Créateurs \+:}\label{index_autotoc_md1}
+
+\begin{DoxyItemize}
+\item DJAMAKORZIAN Sasha p2101813
+\item MORGENSTERN Emma p2110244
+\end{DoxyItemize}\hypertarget{index_autotoc_md2}{}\doxysection{Installation}\label{index_autotoc_md2}
+\hypertarget{index_autotoc_md3}{}\doxysubsection{Linux \+:}\label{index_autotoc_md3}
+Vérifiez que toute la librairie SDL2 est bien installée avec la commande suivante \+:
+
+{\ttfamily sudo apt-\/get install libsdl2-\/dev libsdl2-\/image-\/dev libsdl2-\/ttf-\/dev libsdl2-\/mixer-\/dev}\hypertarget{index_autotoc_md4}{}\doxysubsection{Windows \+:}\label{index_autotoc_md4}
+Il n\textquotesingle{}y a pas de version du jeu sous Windows même mais il est possible d\textquotesingle{}utiliser WSL.
+
+Sous WSL, la commande de l\textquotesingle{}installation de la librairie est la même sous Linux \+\_\+(voir ci-\/dessus)\+\_\+.
+
+{\itshape Comment installer WSL \+: \href{https://learn.microsoft.com/fr-fr/windows/wsl/install}{\texttt{ https\+://learn.\+microsoft.\+com/fr-\/fr/windows/wsl/install}}}\hypertarget{index_autotoc_md5}{}\doxysection{Utilisation}\label{index_autotoc_md5}
+\hypertarget{index_autotoc_md6}{}\doxysubsection{Linux et WSL \+:}\label{index_autotoc_md6}
+Dans le répertoire racine \+:
+
+Tapez la commande make pour compiler le projet et obtenir les executables.
+
+La commande \+:
+\begin{DoxyItemize}
+\item bin/\+SDL permet d\textquotesingle{}éxécuter le jeu avec la librairie SDL
+\item bin/test permet d\textquotesingle{}éxécuter les tests de régressions
+\end{DoxyItemize}\hypertarget{index_autotoc_md7}{}\doxysection{Comment jouer ?}\label{index_autotoc_md7}
+\hypertarget{index_autotoc_md8}{}\doxysubsection{Les touches du Menu \+:}\label{index_autotoc_md8}
+
+\begin{DoxyItemize}
+\item 1 \+: Play pour accéder au jeu
+\item 2 \+: Infos pour accéder aux infos du jeu (les touches)
+\item 3 \+: Quit pour quitter le jeu
+\end{DoxyItemize}
+
+{\itshape A noter \+: la touche ECHAP et la croix de la fenetre ferme le menu et le jeu}\hypertarget{index_autotoc_md9}{}\doxysubsection{Les touches en Jeu \+:}\label{index_autotoc_md9}
+
+\begin{DoxyItemize}
+\item Joueur de gauche \+:
+\begin{DoxyItemize}
+\item D \+: déplacement à droite
+\item Q \+: déplacement à gauche
+\item S \+: s\textquotesingle{}accroupir
+\item C \+: coup de poing
+\item V \+: coup de pied
+\end{DoxyItemize}
+\item Joueur de droite \+:
+\begin{DoxyItemize}
+\item L \+: déplacement à droite
+\item J \+: déplacement à gauche
+\item K \+: s\textquotesingle{}accroupir
+\item B \+: coup de poing
+\item N \+: coup de pied
+\end{DoxyItemize}
+\item Quand le jeu est fini \+:
+\begin{DoxyItemize}
+\item ECHAP \+: pour quitter le jeu
+\end{DoxyItemize}
+\item Refaire une partie \+:
+\begin{DoxyItemize}
+\item rentrer la commande {\ttfamily bin/\+SDL} dans le terminal
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{index_autotoc_md10}{}\doxysection{Organisation des répertoires et des fichiers}\label{index_autotoc_md10}
+
+\begin{DoxyItemize}
+\item {\bfseries{README.\+txt}} \+: Le README que vous lisez actuellement.
+\item {\bfseries{UML.\+png}} \+: Le diagramme UML du jeu
+\item {\bfseries{doc/}} \+: Contient le fichier .doxy et l\textquotesingle{}index vers la page de documentation du jeu.
+\item {\bfseries{data/}} \+: Contient tous les fichiers utilisés pour l\textquotesingle{}affichage des personnages et de leurs animations, du background et des différents sons.
+\item {\bfseries{obj/}} \+: Contient les fichiers objets permettant de créer les exécutables
+\item {\bfseries{bin/}} \+: Contient les exécutables.
+\item {\bfseries{src/}} \+:
+\begin{DoxyItemize}
+\item core/ \+: contient le code des différents module du noyau du jeu
+\item SDL/ \+: contient le code concernant l\textquotesingle{}affichage sfml
+\item txt/ \+: les fichiers de la version texte de la démo mi-\/parcours
+\end{DoxyItemize}
+\item {\bfseries{Makefile}} \+: Permet de compiler tout le code, de créer les fichiers .obj et les exécutables. 
+\end{DoxyItemize}

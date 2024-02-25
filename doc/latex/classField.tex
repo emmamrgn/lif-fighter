@@ -1,0 +1,114 @@
+\hypertarget{classField}{}\doxysection{Référence de la classe Field}
+\label{classField}\index{Field@{Field}}
+
+
+La classe \mbox{\hyperlink{classField}{Field}} contient ses dimensions et un tab 2D de cases (1 case = 1 char)  
+
+
+
+
+{\ttfamily \#include $<$Field.\+h$>$}
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classField_a3e804c92273d9159f413f227b535c672}{Field}} ()
+\begin{DoxyCompactList}\small\item\em Construit un objet \mbox{\hyperlink{classField}{Field}} Le constructeur remplit dimx et dimy et les cases du tableau field avec un terrain par défaut. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classField_a5cce5a8024f31829c4604ee3533827fe}{is\+Position\+Valid}} (const int x, const int y) const
+\begin{DoxyCompactList}\small\item\em Renvoie vraie si on peut positionner un personnage au coordonnées (x,y), faux sinon. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classField_adcc0599da9c2c3141e19e1d9c166f0ef}{get\+DimX}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la largeur du field. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classField_a5ce6120253e2ee32a87f242d47dc60aa}{get\+DimY}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la hauteur du field. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{classField_a34bcea8a73b985accc88b7d9769eaa7b}{get\+XYas\+Char}} (const int x, const int y) const
+\begin{DoxyCompactList}\small\item\em Renvoie le type d\textquotesingle{}objet au coordonnées (x,y) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classField_aadcff0851d296738f32d44ceead5a0d8}{Regression\+Test}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+La classe \mbox{\hyperlink{classField}{Field}} contient ses dimensions et un tab 2D de cases (1 case = 1 char) 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classField_a3e804c92273d9159f413f227b535c672}\label{classField_a3e804c92273d9159f413f227b535c672}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construit un objet \mbox{\hyperlink{classField}{Field}} Le constructeur remplit dimx et dimy et les cases du tableau field avec un terrain par défaut. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classField_adcc0599da9c2c3141e19e1d9c166f0ef}\label{classField_adcc0599da9c2c3141e19e1d9c166f0ef}} 
+\index{Field@{Field}!getDimX@{getDimX}}
+\index{getDimX@{getDimX}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{getDimX()}{getDimX()}}
+{\footnotesize\ttfamily int Field\+::get\+DimX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la largeur du field. 
+
+\mbox{\Hypertarget{classField_a5ce6120253e2ee32a87f242d47dc60aa}\label{classField_a5ce6120253e2ee32a87f242d47dc60aa}} 
+\index{Field@{Field}!getDimY@{getDimY}}
+\index{getDimY@{getDimY}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{getDimY()}{getDimY()}}
+{\footnotesize\ttfamily int Field\+::get\+DimY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la hauteur du field. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classField_a34bcea8a73b985accc88b7d9769eaa7b}\label{classField_a34bcea8a73b985accc88b7d9769eaa7b}} 
+\index{Field@{Field}!getXYasChar@{getXYasChar}}
+\index{getXYasChar@{getXYasChar}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{getXYasChar()}{getXYasChar()}}
+{\footnotesize\ttfamily unsigned char Field\+::get\+XYas\+Char (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoie le type d\textquotesingle{}objet au coordonnées (x,y) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & \+: abscisse de la case de l\textquotesingle{}objet \\
+\hline
+{\em y} & \+: ordonnée de la case de l\textquotesingle{}objet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classField_a5cce5a8024f31829c4604ee3533827fe}\label{classField_a5cce5a8024f31829c4604ee3533827fe}} 
+\index{Field@{Field}!isPositionValid@{isPositionValid}}
+\index{isPositionValid@{isPositionValid}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{isPositionValid()}{isPositionValid()}}
+{\footnotesize\ttfamily bool Field\+::is\+Position\+Valid (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie vraie si on peut positionner un personnage au coordonnées (x,y), faux sinon. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & \+: abscisse de la case à tester \\
+\hline
+{\em y} & \+: ordonnée de la case à tester \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classField_aadcff0851d296738f32d44ceead5a0d8}\label{classField_aadcff0851d296738f32d44ceead5a0d8}} 
+\index{Field@{Field}!RegressionTest@{RegressionTest}}
+\index{RegressionTest@{RegressionTest}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{RegressionTest()}{RegressionTest()}}
+{\footnotesize\ttfamily void Field\+::\+Regression\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Field_8h}{Field.\+h}}\item 
+src/core/\mbox{\hyperlink{Field_8cpp}{Field.\+cpp}}\end{DoxyCompactItemize}
