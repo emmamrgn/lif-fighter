@@ -5,8 +5,8 @@ Un jeu de combat simple en 2D style Street-Fighter.
 *(réalisé dans le cadre de l'UE Conception Et Développement D'Applications)*
 
 ## Créateurs :
-* DJAMAKORZIAN Sasha p2101813
-* MORGENSTERN Emma p2110244
+* DJAMAKORZIAN Sasha 
+* MORGENSTERN Emma 
 
 ## Installation
 
