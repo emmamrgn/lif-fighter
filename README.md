@@ -1,6 +1,7 @@
 ## LIF-FIGHTER
 
 Un jeu de combat simple en 2D style Street-Fighter.
+
 (réalisé dans le cadre de l'UE *Conception Et Développement D'Applications*)
 
 ## Créateurs :
