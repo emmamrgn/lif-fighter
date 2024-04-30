@@ -1,7 +1,7 @@
-## LIF-FIGHTER 
-(réalisé dans le cadre de l'UE *Conception Et Développement D'Applications*)
+## LIF-FIGHTER
 
 Un jeu de combat simple en 2D style Street-Fighter.
+_(réalisé dans le cadre de l'UE *Conception Et Développement D'Applications*)_
 
 ## Créateurs :
 * DJAMAKORZIAN Sasha p2101813
